@@ -1,0 +1,401 @@
+@import '../../cssVars.scss';
+
+.registration-form,
+.additional-form {
+	display: flex;
+	justify-content: center;
+
+	&__container {
+		width: 100%;
+		max-width: 1030px;
+		
+		@media(max-width: 1050px) {
+			padding: 0 13px;
+		}
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	
+	&__container {
+		width: 100%;
+		background: $color13;
+		box-shadow: 10px 12px 15px $color14;
+		padding: 32px 47px 60px;
+		margin: 23px 0 30px;
+
+		@media(max-width: 767px) {
+			padding: 32px 18px 60px;
+		}
+	}
+
+	&__wrapper {
+		@media(max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	&__header {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color2;
+    position: relative;
+		margin-bottom: 56px;
+		
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -12px;
+			width: 47px;
+			height: 6px;
+			background-color: $color12;
+		}
+  }
+	
+	&__row {
+		position: relative;
+		display: flex;
+		box-sizing: border-box;
+		align-items: flex-end;
+
+		@media(max-width: 1100px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__row:not(:last-child) {
+		margin-bottom: 21px;
+	}
+
+	&__row--flex-start {
+		align-items: flex-start;
+	}
+
+	&__education,
+	&__languages,
+	&__communications {
+		margin-bottom: 52px;
+	}
+
+	&__education {
+		@media(max-width: 767px) {
+			margin-bottom: 100px;
+		}
+	}
+
+	&__jobs-container {
+		display: flex;
+		
+		@media(max-width: 1100px) {
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+
+	&__jobs-wrapper {
+		display: flex;
+	}
+
+	&__label {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 13px;
+		color: $color2;
+
+		@media(max-width: 767px) {
+      width: 100%;
+		}
+	}
+	
+	&__label:not(:last-child) {
+		margin-right: 41px;
+		
+		@media(max-width: 1100px) {
+			margin-right: 0;
+			margin-bottom: 21px;
+		}
+	}
+
+	&__label--gap-sm:not(:last-child) {
+		margin-right: 7px;
+		margin-bottom: 0;
+	}
+	
+	&__label--gap-lg:not(:last-child) {
+    margin-right: 23px;
+	}
+	
+	&__label--min-width {
+		min-width: 50px;
+	}
+	
+	&__label--max-width {
+		max-width: 323px;
+
+		@media(max-width: 767px) {
+			max-width: none;
+		}
+	}
+
+	&__label--max-width-sm {
+		width: 134px;
+	}
+	
+	&__label--margin:not(:last-child) {
+		margin-bottom: 21px;
+	}
+
+	&__label--margin-bot:not(:last-child) {
+		@media(max-width: 1100px) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__label--padding:not(:last-child) {
+		@media(max-width: 767px) {
+			padding-right: 33px;
+		}
+	}
+
+	&__label--padding-select:not(:last-child) {
+		@media(max-width: 416px) {
+			max-width: 354px;
+			padding-right: 32px;
+		}
+	}
+	
+	&__label--grow {
+		width: auto;
+	}
+	
+	&__label--width-block {
+		width: 100%;
+  }
+
+	&__section {
+		display: flex;
+
+		&--column {
+			flex-direction: column;
+			margin-bottom: 21px;
+		}
+	}
+
+	&__jobs {
+		position: relative;
+		min-height: 337px;
+
+		@media(max-width: 1100px) {
+			min-height: 488px;
+		}
+	}
+
+	&__checkbox-container {
+		position: absolute;
+		top: 22px;
+		left: 330px;
+		z-index: 1;
+
+		@media(max-width: 767px) {
+			display: inline-block;
+			top: -55px;
+			left: 0;
+		}
+	}
+
+	&__controls {
+		display: flex;
+		align-self: flex-end;
+		margin-bottom: 47px;
+	}
+	
+	&__button-next, &__button-back {
+    position: relative;
+    display: flex;
+    align-items: center;
+		justify-content: center;
+		align-self: flex-end;
+    width: 241px;
+    height: 57px;
+		padding: 0;
+		padding-left: 53px;
+		border: none;
+		box-shadow: 10px 12px 15px $color17;
+    border-left: 14px solid $color12;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: $color2;
+    color: $color3;
+		outline: 0;
+		
+		@media(max-width: 767px) {
+      font-size: 12px;
+			width: 170px;
+			padding-left: 10px;
+		}
+	}
+
+	&__button-next--gap {
+    margin-bottom: 47px;
+	}
+
+	&__button-back {
+		width: 120px;
+		margin-right: 68px;
+		padding-left: 0;
+    background-color: $color3;
+    color: $color2;
+    border: 0;
+		box-shadow: none;
+		
+		@media(max-width: 767px) {
+      margin-right: 5px;
+		}
+	}
+	
+	&__arrowLeft {
+    margin-right: 17px;
+    transition: transform 1s;
+  }
+
+  &__arrowRight {
+    margin-left: 17px;
+    margin-right: 15px;
+		transition: transform 1s;
+		
+		@media(max-width: 767px) {
+			margin-left: 5px;
+		}
+	}
+	
+	&__button-next:hover &__arrowRight {
+    transform: translate(10px, 0);
+  }
+
+  &__button-back:hover &__arrowLeft {
+    transform: translate(-10px, 0);
+	}
+
+	&__delete-button {
+		position: absolute;
+		top: 50%;
+		left: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		width: 25px;
+    height: 25px;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
+    font-size: 25px;
+    color: $color3;
+    background-color: #B4BFCA;
+    outline: 0;
+    opacity: 0.5;
+		transition: opacity 1s;
+
+		@media(max-width: 767px) {
+			left: auto;
+			right: 0;
+		}
+		
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__delete-button--textarea {
+		top: 30%;
+		left: 835px;
+
+		@media(max-width: 947px) {
+			left: auto;
+			right: -32px;
+		}
+
+		@media(max-width: 767px) {
+			right: 0;
+		}
+	}
+
+	&__delete-button--select {
+		top: 47%;
+		left: 700px;
+		
+		@media(max-width: 1100px) {
+			top: 67%;
+			left: 334px;
+		}
+
+		@media(max-width: 417px) {
+			left: auto;
+			right: -4px;
+		}
+	}
+
+	&__delete-button--select-lg {
+		top: 55%;
+
+		@media(max-width: 767px) {
+			left: 330px;
+		}
+
+		@media(max-width: 417px) {
+			left: auto;
+			right: 0;
+		}
+	}
+
+	&__add-control {
+		display: inline-block;
+    opacity: 0.5;
+    transition: opacity 1s;
+		
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__add-button {
+		display: flex;
+		align-items: center;
+		padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+	}
+	
+	&__add-text {
+		margin-left: 10px;
+		text-align: left;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14.1px;
+    line-height: 20px;
+    color: $color1;
+  }
+
+	::-webkit-scrollbar {
+    width: 8px; height: auto;
+  }
+  ::-webkit-scrollbar-button {
+    background-color: transparent;
+    height: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    height: auto;
+    background-color: $color4;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: $color21;
+  }
+}

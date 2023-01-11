@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/components/ForCandidatesPage/ForCandidates.js | yugocraft</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-register">register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-unregister">unregister</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-aboutpage">components/AboutPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-AboutPage">AboutPage</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-applypage">components/ApplyPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TermsAndConditions">TermsAndConditions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translator">translator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-forcandidatespage">components/ForCandidatesPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ForCandidates">ForCandidates</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-impressum">components/Impressum</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Impressum">Impressum</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-popup">components/Popup</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Popup">Popup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-select">components/Select</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Select">Select</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-termsofuse">components/TermsOfUse</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TermsOfUse">TermsOfUse</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store">store</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyDisplayApplyNow">applyDisplayApplyNow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyLanguage">applyLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyUser">applyUser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyUserType">applyUserType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-store">store</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-actions">store/actions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-acquireDate">acquireDate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCalendar">getCalendar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setActiveHour">setActiveHour</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setCalendar">setCalendar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setDay">setDay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setGMTChanged">setGMTChanged</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setPopupActive">setPopupActive</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setRequestAccept">setRequestAccept</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setToken">setToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getConfirmToken">getConfirmToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setConfirmToken">setConfirmToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-displayApplyNow">displayApplyNow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyError">applyError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearError">clearError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setError">setError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLanguage">getLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setLanguage">setLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getEmployer">getEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setNewEmployer">setNewEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCountries">getCountries</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDocumentsCategories">getDocumentsCategories</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-registerEmployer">registerEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setUserData">setUserData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userType">userType</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-helpers">store/helpers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-useWindowDimensions">useWindowDimensions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-reducers">store/reducers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-calendarRaducer">calendarRaducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-confirmCvReducer">confirmCvReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-displayApplyNowReducer">displayApplyNowReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-errorHandlingReducer">errorHandlingReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-languageReducer">languageReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newEmployerReducer">newEmployerReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-registrationFormReducer">registrationFormReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userDataReducer">userDataReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userTypeReducer">userTypeReducer</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/components/ForCandidatesPage/ForCandidates.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React from &apos;react&apos;;
+import &apos;./styles.scss&apos;;
+import i18n from &apos;i18n-js&apos;;
+import worker from &apos;./images/worker.jpg&apos;;
+import worker2 from &apos;./images/worker2.jpg&apos;;
+import worker3 from &apos;./images/worker3.jpg&apos;;
+import worker4 from &apos;./images/worker4.jpg&apos;;
+import worker5 from &apos;./images/worker5.jpg&apos;;
+import worker6 from &apos;./images/worker6.jpg&apos;;
+
+/**
+ * @desc UI of For Candidates Page
+ * @returns {JSX.Element}
+ */
+const ForCandidates = () =&gt; {
+	return (
+		&lt;article className=&apos;forCandidates&apos;&gt;
+			&lt;div className=&apos;textOnLine forCandidates__textOnLine forCandidates__HowItWillBeLine&apos;&gt;
+				&lt;span className=&apos; forCandidates__HowItWillBe &apos;&gt;{i18n.t(&apos;How-it-will-be&apos;)}&lt;/span&gt;
+			&lt;/div&gt;
+
+			&lt;section className=&apos;forCandidates__middle&apos;&gt;
+				&lt;div className=&apos;forCandidates__middleCard&apos;&gt;
+					&lt;div className=&apos;forCandidates__cardNumber&apos; translate=&apos;no&apos;&gt;
+						&lt;span className=&apos;notranslate&apos; translate=&apos;no&apos;&gt;
+							1
+						&lt;/span&gt;
+						&lt;div className=&apos;forCandidates__cardNumberDescription&apos;&gt;{i18n.t(&apos;Step&apos;)} 1&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;p className=&apos;forCandidates__middleCardText&apos;&gt;{i18n.t(&apos;step1&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div className=&apos;forCandidates__middleCard&apos;&gt;
+					&lt;div className=&apos;forCandidates__cardNumber&apos; translate=&apos;no&apos;&gt;
+						&lt;span className=&apos;notranslate&apos; translate=&apos;no&apos;&gt;
+							2
+						&lt;/span&gt;
+						&lt;div className=&apos;forCandidates__cardNumberDescription&apos;&gt;{i18n.t(&apos;Step&apos;)} 2&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;p className=&apos;forCandidates__middleCardText&apos;&gt;{i18n.t(&apos;step2&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+
+				&lt;div className=&apos;forCandidates__middleCard forCandidates__middleCard3&apos;&gt;
+					&lt;div className=&apos;forCandidates__cardNumber&apos; translate=&apos;no&apos;&gt;
+						&lt;span className=&apos;notranslate&apos; translate=&apos;no&apos;&gt;
+							3
+						&lt;/span&gt;
+						&lt;div className=&apos;forCandidates__cardNumberDescription&apos;&gt;{i18n.t(&apos;Step&apos;)} 3&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;p className=&apos;forCandidates__middleCardText&apos;&gt;{i18n.t(&apos;step3&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+
+				&lt;div className=&apos;forCandidates__middleCard forCandidates__middleCard3&apos;&gt;
+					&lt;div className=&apos;forCandidates__cardNumber&apos; translate=&apos;no&apos;&gt;
+						&lt;span className=&apos;notranslate&apos; translate=&apos;no&apos;&gt;
+							4
+						&lt;/span&gt;
+						&lt;div className=&apos;forCandidates__cardNumberDescription&apos;&gt;{i18n.t(&apos;Step&apos;)} 4&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;p className=&apos;forCandidates__middleCardText&apos;&gt;{i18n.t(&apos;step4&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+
+				&lt;div className=&apos;forCandidates__middleCard forCandidates__middleCard3&apos;&gt;
+					&lt;div className=&apos;forCandidates__cardNumber&apos; translate=&apos;no&apos;&gt;
+						&lt;span className=&apos;notranslate&apos; translate=&apos;no&apos;&gt;
+							5
+						&lt;/span&gt;
+						&lt;div className=&apos;forCandidates__cardNumberDescription&apos;&gt;{i18n.t(&apos;Step&apos;)} 5&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;p className=&apos;forCandidates__middleCardText&apos;&gt;{i18n.t(&apos;step5&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+
+				&lt;div className=&apos;forCandidates__middleCard forCandidates__middleCard3&apos;&gt;
+					&lt;div className=&apos;forCandidates__cardNumber&apos; translate=&apos;no&apos;&gt;
+						&lt;span className=&apos;notranslate&apos; translate=&apos;no&apos;&gt;
+							6
+						&lt;/span&gt;
+						&lt;div className=&apos;forCandidates__cardNumberDescription&apos;&gt;{i18n.t(&apos;Step&apos;)} 6&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;p className=&apos;forCandidates__middleCardText&apos;&gt;{i18n.t(&apos;step6&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+
+				&lt;div className=&apos;forCandidates__middleCard forCandidates__middleCard3&apos;&gt;
+					&lt;div className=&apos;forCandidates__cardNumber&apos; translate=&apos;no&apos;&gt;
+						&lt;span className=&apos;notranslate&apos; translate=&apos;no&apos;&gt;
+							7
+						&lt;/span&gt;
+						&lt;div className=&apos;forCandidates__cardNumberDescription&apos;&gt;{i18n.t(&apos;Step&apos;)} 7&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;p className=&apos;forCandidates__middleCardText&apos;&gt;{i18n.t(&apos;step7&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+
+				&lt;div className=&apos;forCandidates__middleCard forCandidates__middleCard3&apos;&gt;
+					&lt;div className=&apos;forCandidates__cardNumber&apos; translate=&apos;no&apos;&gt;
+						&lt;span className=&apos;notranslate&apos; translate=&apos;no&apos;&gt;
+							8
+						&lt;/span&gt;
+						&lt;div className=&apos;forCandidates__cardNumberDescription&apos;&gt;{i18n.t(&apos;Step&apos;)} 8&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;p className=&apos;forCandidates__middleCardText&apos;&gt;{i18n.t(&apos;step8&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;section className=&apos;forCandidates__bottom&apos;&gt;
+				&lt;div className=&apos;about__textOnLine about__textOnLineOnDarmBackground&apos;&gt;
+					&lt;span className=&apos;textOnLineLight&apos;&gt;{i18n.t(&apos;YUGOKRAFT-VERBINDET-ARBEITSM&#xC4;RKTE&apos;)}&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div className=&apos;forCandidates__bottomContetnWrapper&apos;&gt;
+					&lt;h2 className=&apos;forCandidates__bottomHeader&apos;&gt;{i18n.t(&apos;offers-10000-vacancies&apos;)}&lt;/h2&gt;
+					&lt;div className=&apos;forCandidates__bottomCardsWrapper&apos;&gt;
+						&lt;div className=&apos;forCandidates__bottomCard&apos;&gt;
+							&lt;div className=&apos;forCandidates__bottomCardShadow&apos;&gt;
+								&lt;div className=&apos;forCandidates__bottomCardDescriptionWrapper&apos;&gt;
+									&lt;h3 className=&apos;forCandidates__bottomCardHeader&apos;&gt;{i18n.t(&apos;Erzieher-Hilfskraft&apos;)}&lt;/h3&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;ab&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salaryCost&apos;&gt;&amp;nbsp;22.500 {i18n.t(&apos;EURO&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;im-Jahr&apos;)}&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;img src={worker} alt=&apos;&apos; className=&apos;forCandidates__bottomCardImage&apos; /&gt;
+						&lt;/div&gt;
+
+						&lt;div className=&apos;forCandidates__bottomCard&apos;&gt;
+							&lt;div className=&apos;forCandidates__bottomCardShadow&apos;&gt;
+								&lt;div className=&apos;forCandidates__bottomCardDescriptionWrapper&apos;&gt;
+									&lt;h3 className=&apos;forCandidates__bottomCardHeader&apos;&gt;{i18n.t(&apos;Ingenieur&apos;)}&lt;/h3&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;ab&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salaryCost&apos;&gt;&amp;nbsp;45.000 {i18n.t(&apos;EURO&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;im-Jahr&apos;)}&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;img src={worker2} alt=&apos;&apos; className=&apos;forCandidates__bottomCardImage&apos; /&gt;
+						&lt;/div&gt;
+
+						&lt;div className=&apos;forCandidates__bottomCard&apos;&gt;
+							&lt;div className=&apos;forCandidates__bottomCardShadow&apos;&gt;
+								&lt;div className=&apos;forCandidates__bottomCardDescriptionWrapper&apos;&gt;
+									&lt;h3 className=&apos;forCandidates__bottomCardHeader&apos;&gt;{i18n.t(&apos;Security-Mitarbeiter&apos;)}&lt;/h3&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;ab&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salaryCost&apos;&gt;&amp;nbsp;31.000 {i18n.t(&apos;EURO&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;im-Jahr&apos;)}&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;img src={worker3} alt=&apos;&apos; className=&apos;forCandidates__bottomCardImage&apos; /&gt;
+						&lt;/div&gt;
+
+						&lt;div className=&apos;forCandidates__bottomCard&apos;&gt;
+							&lt;div className=&apos;forCandidates__bottomCardShadow&apos;&gt;
+								&lt;div className=&apos;forCandidates__bottomCardDescriptionWrapper&apos;&gt;
+									&lt;h3 className=&apos;forCandidates__bottomCardHeader&apos;&gt;{i18n.t(&apos;Reinigungskraft&apos;)}&lt;/h3&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;ab&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salaryCost&apos;&gt;&amp;nbsp;27.000 {i18n.t(&apos;EURO&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;im-Jahr&apos;)}&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;img src={worker4} alt=&apos;&apos; className=&apos;forCandidates__bottomCardImage&apos; /&gt;
+						&lt;/div&gt;
+
+						&lt;div className=&apos;forCandidates__bottomCard&apos;&gt;
+							&lt;div className=&apos;forCandidates__bottomCardShadow&apos;&gt;
+								&lt;div className=&apos;forCandidates__bottomCardDescriptionWrapper&apos;&gt;
+									&lt;h3 className=&apos;forCandidates__bottomCardHeader&apos;&gt;{i18n.t(&apos;Bauarbeiter&apos;)}&lt;/h3&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;ab&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salaryCost&apos;&gt;&amp;nbsp;23.000 {i18n.t(&apos;EURO&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;im-Jahr&apos;)}&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;img src={worker5} alt=&apos;&apos; className=&apos;forCandidates__bottomCardImage&apos; /&gt;
+						&lt;/div&gt;
+
+						&lt;div className=&apos;forCandidates__bottomCard&apos;&gt;
+							&lt;div className=&apos;forCandidates__bottomCardShadow&apos;&gt;
+								&lt;div className=&apos;forCandidates__bottomCardDescriptionWrapper&apos;&gt;
+									&lt;h3 className=&apos;forCandidates__bottomCardHeader&apos;&gt;{i18n.t(&apos;K&#xFC;chenhilfskraft&apos;)}&lt;/h3&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;ab&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salaryCost&apos;&gt;&amp;nbsp;25.000 {i18n.t(&apos;EURO&apos;)}&lt;/span&gt;
+									&lt;span className=&apos;forCandidates__salary&apos;&gt;{i18n.t(&apos;im-Jahr&apos;)}&lt;/span&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;img src={worker6} alt=&apos;&apos; className=&apos;forCandidates__bottomCardImage&apos; /&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/section&gt;
+
+			&lt;div className=&apos;headerBlock__textOnLine headerBlock__textOnLineReviews&apos;&gt;
+				&lt;span&gt;{i18n.t(&apos;for-job&apos;)}&lt;/span&gt;
+			&lt;/div&gt;
+
+			&lt;section className=&apos;forCandidates__top&apos;&gt;
+				&lt;h1 className=&apos;forCandidates__header&apos;&gt;{i18n.t(&apos;what-do-you-need&apos;)}&lt;/h1&gt;
+				&lt;div className=&apos;forCandidates__topCardsWrapper&apos;&gt;
+					&lt;div className=&apos;forCandidates__card forCandidates__logo1&apos;&gt;
+						&lt;h2 className=&apos;forCandidates__cardHeader&apos;&gt;{i18n.t(&apos;passport&apos;)}&lt;/h2&gt;
+						&lt;p className=&apos;forCandidates__text&apos;&gt;{i18n.t(&apos;Ein-abgelaufener-Pass&apos;)}&lt;/p&gt;
+					&lt;/div&gt;
+
+					&lt;div className=&apos;forCandidates__card forCandidates__logo2&apos;&gt;
+						&lt;h2 className=&apos;forCandidates__cardHeader&apos;&gt;{i18n.t(&apos;application&apos;)}&lt;/h2&gt;
+						&lt;p className=&apos;forCandidates__text forCandidates__textApplication&apos;&gt;{i18n.t(&apos;application-description&apos;)}&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div className=&apos;forCandidates__topCardsWrapper&apos;&gt;
+					&lt;div className=&apos;forCandidates__card forCandidates__logo3&apos;&gt;
+						&lt;h2 className=&apos;forCandidates__cardHeader&apos;&gt;{i18n.t(&apos;Polizeiliches-F&#xFC;hrungszeugnis&apos;)}&lt;/h2&gt;
+						&lt;p className=&apos;forCandidates__text&apos;&gt;{i18n.t(&apos;Bitte besorgen Sie eine Best&#xE4;tigung&apos;)}&lt;/p&gt;
+					&lt;/div&gt;
+
+					&lt;div className=&apos;forCandidates__card forCandidates__logo4&apos;&gt;
+						&lt;h2 className=&apos;forCandidates__cardHeader&apos;&gt;{i18n.t(&apos;Zeugnisse&apos;)}&lt;/h2&gt;
+						&lt;p className=&apos;forCandidates__text&apos;&gt;{i18n.t(&apos;Zeugnisse-description&apos;)}&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/section&gt;
+		&lt;/article&gt;
+	);
+};
+
+export default ForCandidates;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

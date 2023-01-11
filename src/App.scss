@@ -1,0 +1,132 @@
+/** Montserrat Regular **/
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 400;
+	font-style: normal;
+	src: url("/fonts/Montserrat-Regular.woff2") format("woff2"),
+	url("/fonts/Montserrat-Regular.woff") format("woff");
+}
+
+/** Montserrat Medium **/
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-style: normal;
+	src: url("/fonts/Montserrat-Medium.woff2") format("woff2"),
+	url("/fonts/Montserrat-Medium.woff") format("woff");
+}
+
+/** Montserrat SemiBold **/
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 600;
+	font-style: normal;
+	src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+	url("/fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+/** Montserrat Bold **/
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-style: normal;
+	src: url("/fonts/Montserrat-Bold.woff2") format("woff2"),
+	url("/fonts/Montserrat-Bold.woff") format("woff");
+}
+
+/** Montserrat ExtraBold **/
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 800;
+	font-style: normal;
+	src: url("/fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+	url("/fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+/** Montserrat Black **/
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 900;
+	font-style: normal;
+	src: url("/fonts/Montserrat-Black.woff2") format("woff2"),
+	url("/fonts/Montserrat-Black.woff") format("woff");
+}
+
+#root {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+$COLOR_MENU_DARK: #183851;
+
+.pageContainer{
+  margin-top: 100px;
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textOnLine{
+  margin: 120px 0;
+  background-color: #DAE1E8;
+  height: 10px;
+  position: relative;
+  margin-bottom: 104px;
+  width: 100%;
+
+  span{
+    font-size: 24px;
+    font-weight: 900;
+    color: #1E496B;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 24px;
+    text-align: left;
+
+    @media(max-width: 600px) {
+      left: 0;
+      padding: 0;
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+      display: inline;
+    }
+  }
+
+  .textOnLineLight {
+    color: #DAE1E8;
+    background-color: #153757;
+    padding-left: 22px;
+    padding-top: 4px;
+    padding-right: 18px;
+  }
+}
+
+button {
+	cursor: pointer;
+}
+
+@media(max-width: 950px) {
+  .textOnLine {
+    margin-bottom: 100px ;
+  }
+
+  .textOnLine {
+    margin-top: 226px !important;
+    padding-left: 0;
+  }
+}
+
+@media(max-width: 600px) {
+  .textOnLine .textOnLineLight {
+    font-size: 14.1px;
+  }
+}

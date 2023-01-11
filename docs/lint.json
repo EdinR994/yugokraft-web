@@ -1,0 +1,353 @@
+[
+  {
+    "name": "ApplyNow3",
+    "filePath": "src/components/ApplyPage/ApplyNow3.js",
+    "lines": [
+      {
+        "lineNumber": 13,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * @desc UI for candidate registration form - step 3"
+      },
+      {
+        "lineNumber": 15,
+        "line": " * @param {object} displayApplyNow"
+      },
+      {
+        "lineNumber": 16,
+        "line": " * @param {function} changeDisplayApplyNow"
+      },
+      {
+        "lineNumber": 17,
+        "line": " * @param {function} applyUser"
+      },
+      {
+        "lineNumber": 18,
+        "line": " * @param {object} userFromRedux"
+      },
+      {
+        "lineNumber": 19,
+        "line": " * @param {string} languageSelected"
+      },
+      {
+        "lineNumber": 20,
+        "line": " * @returns {JSX.Element|null}"
+      },
+      {
+        "lineNumber": 21,
+        "line": " */"
+      },
+      {
+        "lineNumber": 22,
+        "line": "const ApplyNow3 = ({ languageSelected, displayApplyNow, changeDisplayApplyNow, applyUser, userFromRedux }) => {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "displayApplyNow",
+      "changeDisplayApplyNow",
+      "applyUser",
+      "userFromRedux",
+      "languageSelected"
+    ]
+  },
+  {
+    "name": "ApplyNow5",
+    "filePath": "src/components/ApplyPage/ApplyNow5.js",
+    "lines": [
+      {
+        "lineNumber": 18,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 19,
+        "line": " * @desc UI for candidate registration form - step 5 uploading files"
+      },
+      {
+        "lineNumber": 20,
+        "line": " * @param {object} displayApplyNow"
+      },
+      {
+        "lineNumber": 21,
+        "line": " * @param {function} changeDisplayApplyNow"
+      },
+      {
+        "lineNumber": 22,
+        "line": " * @param {function} applyUser"
+      },
+      {
+        "lineNumber": 23,
+        "line": " * @param {function} getUser"
+      },
+      {
+        "lineNumber": 24,
+        "line": " * @param {string} languageSelected"
+      },
+      {
+        "lineNumber": 25,
+        "line": " * @returns {JSX.Element|null}"
+      },
+      {
+        "lineNumber": 26,
+        "line": " */"
+      },
+      {
+        "lineNumber": 27,
+        "line": "const ApplyNow5 = ({ languageSelected, displayApplyNow, changeDisplayApplyNow, getUser }) => {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "displayApplyNow",
+      "changeDisplayApplyNow",
+      "applyUser",
+      "getUser",
+      "languageSelected"
+    ]
+  },
+  {
+    "name": "Congrads",
+    "filePath": "src/components/ApplyPage/Congrads.js",
+    "lines": [
+      {
+        "lineNumber": 9,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * @desc UI for screen after registration success"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * @param {string} languageSelected"
+      },
+      {
+        "lineNumber": 12,
+        "line": " * @param {object} displayApplyNow"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * @param {function} changeDisplayApplyNow"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * @param {function} applyUser"
+      },
+      {
+        "lineNumber": 15,
+        "line": " * @returns {JSX.Element}"
+      },
+      {
+        "lineNumber": 16,
+        "line": " */"
+      },
+      {
+        "lineNumber": 17,
+        "line": "const Congrads = ({ languageSelected, displayApplyNow, changeDisplayApplyNow, applyUser }) => {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "languageSelected",
+      "displayApplyNow",
+      "changeDisplayApplyNow",
+      "applyUser"
+    ]
+  },
+  {
+    "name": "TermsAndConditions",
+    "filePath": "src/components/ApplyPage/TermsAndConditions.js",
+    "lines": [
+      {
+        "lineNumber": 5,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @desc UI for terms and conditions"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param {object} displayApplyNow"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @param {function} changeDisplayApplyNow"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @returns {JSX.Element|null}"
+      },
+      {
+        "lineNumber": 10,
+        "line": " */"
+      },
+      {
+        "lineNumber": 11,
+        "line": "const TermsAndConditions = ({ displayApplyNow, changeDisplayApplyNow }) => {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "displayApplyNow",
+      "changeDisplayApplyNow"
+    ]
+  },
+  {
+    "name": "Footer",
+    "filePath": "src/components/Footer/Footer.js",
+    "lines": [
+      {
+        "lineNumber": 21,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 22,
+        "line": " * @desc function for creating footer UI"
+      },
+      {
+        "lineNumber": 23,
+        "line": " * @param {string}language"
+      },
+      {
+        "lineNumber": 24,
+        "line": " * @param{function}applyLanguage"
+      },
+      {
+        "lineNumber": 25,
+        "line": " * @param {string} userType"
+      },
+      {
+        "lineNumber": 26,
+        "line": " * @returns {JSX.Element}"
+      },
+      {
+        "lineNumber": 27,
+        "line": " */"
+      },
+      {
+        "lineNumber": 28,
+        "line": "const Footer = ({ language, applyLanguage, userType }) => {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "{string}language",
+      "userType"
+    ]
+  },
+  {
+    "name": "Popup",
+    "filePath": "src/components/Popup/Popup.js",
+    "lines": [
+      {
+        "lineNumber": 4,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * @desc function for creating simple Popup with text"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @param {string} text"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param {function} hidePopup"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @returns {JSX.Element}"
+      },
+      {
+        "lineNumber": 9,
+        "line": " */"
+      },
+      {
+        "lineNumber": 10,
+        "line": "const Popup = ({ text, hidePopup }) => {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "text",
+      "hidePopup"
+    ]
+  },
+  {
+    "name": "Select",
+    "filePath": "src/components/Select/Select.js",
+    "lines": [
+      {
+        "lineNumber": 6,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @desc function for creating custom Select component"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @param {object} values"
+      },
+      {
+        "lineNumber": 9,
+        "line": " * @param {function} cb"
+      },
+      {
+        "lineNumber": 10,
+        "line": " * @param {string} placeHolder"
+      },
+      {
+        "lineNumber": 11,
+        "line": " * @param {boolean} selected"
+      },
+      {
+        "lineNumber": 12,
+        "line": " * @param {string} classWord"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * @param {function} click"
+      },
+      {
+        "lineNumber": 14,
+        "line": " * @returns {JSX.Element}"
+      },
+      {
+        "lineNumber": 15,
+        "line": " */"
+      },
+      {
+        "lineNumber": 16,
+        "line": "const Select = ({ values, cb, placeHolder, selected, classWord = 'className', click = () => null }) => {"
+      }
+    ],
+    "codeParams": [
+      "*"
+    ],
+    "docParams": [
+      "values",
+      "cb",
+      "placeHolder",
+      "selected",
+      "classWord",
+      "click"
+    ]
+  }
+]

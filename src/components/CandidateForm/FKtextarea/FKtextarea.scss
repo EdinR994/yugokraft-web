@@ -1,0 +1,30 @@
+@import '../../../cssVars.scss';
+
+.form {
+	&__textarea {
+		display: block;
+		min-width: 200px;
+    height: 104px;
+    max-height: 200px;
+    margin-top: -10px;
+    padding: 15px 20px;
+    border: 2px solid $color15;
+		border-radius: 3px;
+    color: #1E496B;
+    background: $color3;
+		font-family: "Montserrat";
+    font-weight: 600;
+		font-size: 13px;
+		outline: none;
+
+		@media(max-width: 767px) {
+			padding: 10px 5px;
+		}
+	}
+	
+	&__textarea::placeholder {
+		font-family: 'Montserrat';
+    font-weight: 600;
+    color: $color16;
+  }
+}

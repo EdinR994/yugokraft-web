@@ -1,0 +1,35 @@
+@import '../../../cssVars.scss';
+
+.form {
+	&__label-checkbox {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 43px;
+		font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 13px;
+		color: $color10;
+	}
+	
+	&__checkbox {
+		display: none;
+	}
+	
+	&__checkbox-img {
+		margin-right: 12px;
+		cursor: pointer;
+	}
+
+	&__checkbox-gap {
+		margin-top: 22px;
+	}
+
+	&__label-checkbox {
+		@media(max-width: 767px) {
+			width: auto;
+		}
+	}
+}
+
+

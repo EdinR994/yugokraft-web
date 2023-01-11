@@ -1,0 +1,157 @@
+@import '../../cssVars.scss';
+
+.select:hover {
+  cursor: pointer;
+}
+
+.noclicable {
+  pointer-events: none;
+  resize: none;
+}
+
+.select {
+  width: 323px;
+  height: 43px;
+  background: $color3;
+  border: 2px solid $color15;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 21px;
+  margin-bottom: 21px;
+  margin-right: 41px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none !important;
+
+  &__wrapper {
+    position: relative;
+    outline: none;
+    display: flex;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  &__option {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: $color2;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    min-height: 33px;
+  }
+
+  &__option:hover {
+    cursor: pointer;
+    background: $color15;
+    border-left: 6px solid $color4;
+    padding-left: 4px;
+  }
+
+  &__placeHolder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 38px;
+    color: $color16;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &__selected {
+    color: $color2;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 38px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &__arrowDown {
+    justify-self: flex-end;
+    margin-right: 13px;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+  &__arrowUp {
+    justify-self: flex-end;
+    margin-right: 13px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+  &__optionsWrapper {
+    width: calc(100% + 2px);
+    position: absolute;
+    top: calc(100% + 2px);
+    left: -1px;
+    background-color: $color3;
+    border: 2px solid $color15;
+    border-radius: 3px;
+    box-sizing: border-box;
+    max-height: 350px;
+    overflow-y: auto;
+    z-index: 4;
+  }
+
+  &__selectMonth {
+    width: 128px;
+    margin: 0;
+  }
+}
+
+.radnoIskusstvo {
+  @media (min-width: 750px) {
+    margin-right: 11px !important;
+  }
+
+  @media (max-width: 800px) {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .select {
+    width: 100%;
+    margin-right: 0;
+
+    &__short {
+      width: calc(100% - 40px);
+    }
+
+    &__selectMonth {
+      width: 100%;
+      min-width: 122px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .select {
+    margin-bottom: 14px;
+  }
+}

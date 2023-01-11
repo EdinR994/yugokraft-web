@@ -1,0 +1,25 @@
+.warning-message {
+	display: flex;
+	align-self: flex-start;
+	margin-top: 10px;
+
+	&__logo {
+		width: 17px;
+		height: 17px;
+		margin-right: 10px;
+	}
+
+	&__text {
+		font-family: Montserrat, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 19px;
+		color: #e45454;
+	}
+
+	&__text--underlined {
+		font-weight: 500;
+		text-decoration: underline;
+	}
+}

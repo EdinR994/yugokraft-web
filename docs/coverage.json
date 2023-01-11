@@ -1,0 +1,259 @@
+{
+  "coverage": "47.77%",
+  "expectCount": 90,
+  "actualCount": 43,
+  "files": {
+    "src/App.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        12,
+        33,
+        37
+      ]
+    },
+    "src/components/AboutPage/AboutPage.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/components/ApplyEmployerPage/ApllyCongrads.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        47,
+        52
+      ]
+    },
+    "src/components/ApplyPage/ApplyNow3.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        535,
+        540
+      ]
+    },
+    "src/components/ApplyPage/ApplyNow5.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        536,
+        541
+      ]
+    },
+    "src/components/ApplyPage/ApplyNowPage.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        34,
+        38
+      ]
+    },
+    "src/components/ApplyPage/Congrads.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        53,
+        58
+      ]
+    },
+    "src/components/ApplyPage/TermsAndConditions.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/components/ApplyPage/translator.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "src/components/Footer/Footer.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        120,
+        124
+      ]
+    },
+    "src/components/ForCandidatesPage/ForCandidates.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/components/Impressum/Impressum.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/components/Popup/Popup.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/components/Select/Select.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/components/TermsOfUse/TermsOfUse.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/index.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "src/serviceWorker.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        13,
+        21,
+        52,
+        93,
+        118
+      ]
+    },
+    "src/store/actions/calendar.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "src/store/actions/confirmCv.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/store/actions/displayApplyNow.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/store/actions/errorHandling.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "src/store/actions/language.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/store/actions/newEmployer.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/store/actions/registrationForm.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/store/actions/userData.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/store/actions/userType.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/store/helpers/getWindowDimensions.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/store/reducers/calendarRaducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        11,
+        21
+      ]
+    },
+    "src/store/reducers/confirmCvReducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "src/store/reducers/displayApplyNowReducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "src/store/reducers/errorHandlingReducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "src/store/reducers/languageReducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "src/store/reducers/newEmployerReducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        9
+      ]
+    },
+    "src/store/reducers/registrationFormReducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        9
+      ]
+    },
+    "src/store/reducers/userDataReducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "src/store/reducers/userTypeReducer.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "src/store/store.js": {
+      "expectCount": 7,
+      "actualCount": 4,
+      "undocumentLines": [
+        19,
+        69,
+        71
+      ]
+    }
+  }
+}

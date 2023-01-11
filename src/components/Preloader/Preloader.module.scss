@@ -1,0 +1,30 @@
+
+.preLoader {
+	z-index: 30;
+	overflow-y: scroll;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	.loader {
+		top: 200px;
+		margin: 100px auto;
+		font-size: 25px;
+		width: 1em;
+		height: 1em;
+		border-radius: 50%;
+		position: relative;
+		text-indent: -9999em;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}

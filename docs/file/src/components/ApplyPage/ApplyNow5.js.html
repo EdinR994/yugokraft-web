@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/components/ApplyPage/ApplyNow5.js | yugocraft</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-register">register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-unregister">unregister</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-aboutpage">components/AboutPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-AboutPage">AboutPage</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-applypage">components/ApplyPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TermsAndConditions">TermsAndConditions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translator">translator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-forcandidatespage">components/ForCandidatesPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ForCandidates">ForCandidates</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-impressum">components/Impressum</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Impressum">Impressum</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-popup">components/Popup</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Popup">Popup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-select">components/Select</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Select">Select</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-termsofuse">components/TermsOfUse</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TermsOfUse">TermsOfUse</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store">store</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyDisplayApplyNow">applyDisplayApplyNow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyLanguage">applyLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyUser">applyUser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyUserType">applyUserType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-store">store</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-actions">store/actions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-acquireDate">acquireDate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCalendar">getCalendar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setActiveHour">setActiveHour</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setCalendar">setCalendar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setDay">setDay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setGMTChanged">setGMTChanged</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setPopupActive">setPopupActive</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setRequestAccept">setRequestAccept</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setToken">setToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getConfirmToken">getConfirmToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setConfirmToken">setConfirmToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-displayApplyNow">displayApplyNow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyError">applyError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearError">clearError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setError">setError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLanguage">getLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setLanguage">setLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getEmployer">getEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setNewEmployer">setNewEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCountries">getCountries</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDocumentsCategories">getDocumentsCategories</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-registerEmployer">registerEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setUserData">setUserData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userType">userType</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-helpers">store/helpers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-useWindowDimensions">useWindowDimensions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-reducers">store/reducers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-calendarRaducer">calendarRaducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-confirmCvReducer">confirmCvReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-displayApplyNowReducer">displayApplyNowReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-errorHandlingReducer">errorHandlingReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-languageReducer">languageReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newEmployerReducer">newEmployerReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-registrationFormReducer">registrationFormReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userDataReducer">userDataReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userTypeReducer">userTypeReducer</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/components/ApplyPage/ApplyNow5.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import &apos;./styles.scss&apos;;
+import React, { useState, useEffect } from &apos;react&apos;;
+import { useDispatch, useSelector, connect } from &apos;react-redux&apos;;
+import i18n from &apos;i18n-js&apos;;
+import { v4 as uuidv4 } from &apos;uuid&apos;;
+import cn from &apos;classnames&apos;;
+import imageCompression from &apos;browser-image-compression&apos;;
+import { Link } from &apos;react-router-dom&apos;;
+import PropTypes from &apos;prop-types&apos;;
+import arrowLeft from &apos;./images/arrowLeft.svg&apos;;
+import tick from &apos;./images/tick.svg&apos;;
+import noteWarning from &apos;./images/note-warning.svg&apos;;
+import * as funcsFromStore from &apos;../../store/store&apos;;
+import routes from &apos;../../constants/routes&apos;;
+import Popup from &apos;../Popup/Popup&apos;;
+import { getDocumentsCategories } from &apos;../../store/actions/registrationForm&apos;;
+import Preloader from &apos;../Preloader/Preloader&apos;;
+
+/**
+ * @desc UI for candidate registration form - step 5 uploading files
+ * @param {object} displayApplyNow
+ * @param {function} changeDisplayApplyNow
+ * @param {function} applyUser
+ * @param {function} getUser
+ * @param {string} languageSelected
+ * @returns {JSX.Element|null}
+ */
+const ApplyNow5 = ({ languageSelected, displayApplyNow, changeDisplayApplyNow, getUser }) =&gt; {
+	const [uploadForm, setUploadForm] = useState([]);
+	const [applyTermsOfUse, setApplyTermsOfUse] = useState(false);
+	const [notChecckedTermsOfUse, setNotChecckedTermsOfUse] = useState(false);
+	const [popupMaxSize, setPopupMaxSize] = useState(false);
+	const [displayLoader, setDisplayLoader] = useState(false);
+	const [errorFromBack, setErrorFromBack] = useState(&apos;&apos;);
+	const [filesData, setFilesData] = useState([]);
+	const [categoriesData, setCategoriesData] = useState({});
+	const dispatch = useDispatch();
+	const { documentsCategories } = useSelector(({ registrationForm }) =&gt; registrationForm);
+
+	useEffect(() =&gt; {
+		document.getElementById(&apos;facebook&apos;).innerHTML = `
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=&apos;2.0&apos;;
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,&apos;script&apos;,
+    &apos;https://connect.facebook.net/en_US/fbevents.js&apos;);
+    fbq(&apos;init&apos;, &apos;614352799500868&apos;);
+		fbq(&apos;track&apos;, &apos;CompleteRegistration&apos;);    `;
+
+		dispatch(getDocumentsCategories());
+	}, [dispatch]);
+
+	/**
+	 * @desc preparing uploadedCategories object and uploadedFiles array for uploading to back
+	 */
+	useEffect(() =&gt; {
+		const uploadedCategories = {};
+		const uploadedFiles = [];
+
+		uploadForm
+			.filter((category) =&gt; category.files.length &gt; 0)
+			.forEach((category) =&gt; {
+				category.files.forEach((file) =&gt; {
+					uploadedFiles.push(file.data);
+				});
+			});
+		setFilesData(uploadedFiles);
+
+		uploadForm
+			.filter((category) =&gt; category.files.length &gt; 0)
+			.forEach((category) =&gt; {
+				if (category.files.length === 0) {
+					return;
+				}
+
+				category.files.forEach((file) =&gt; {
+					uploadedCategories[file.data.name] = category.id;
+				});
+			});
+		setCategoriesData(uploadedCategories);
+	}, [uploadForm]);
+
+	/**
+	 * @desc preparing documents categories array
+	 */
+	useEffect(() =&gt; {
+		const uploadDocumentsCategories = documentsCategories.map((category) =&gt; {
+			let categoryName = &apos;&apos;;
+
+			switch (category.name) {
+				case &apos;CV&apos;:
+					categoryName = &apos;uploadForm.lebenslauf&apos;;
+					break;
+				case &apos;CVTranslatedInGermanOrEnglish&apos;:
+					categoryName = &apos;uploadForm.lebenslauf in Deutsch&apos;;
+					break;
+				case &apos;Diploma&apos;:
+					categoryName = &apos;uploadForm.diplom&apos;;
+					break;
+				case &apos;DiplomaTranslatedInGermanOrEnglish&apos;:
+					categoryName = &apos;uploadForm.diplom in Deutsch&apos;;
+					break;
+				case &apos;Certificates&apos;:
+					categoryName = &apos;uploadForm.arbeitszeugnisse&apos;;
+					break;
+				case &apos;CertificatesTranslatedInGermanOrEnglish&apos;:
+					categoryName = &apos;uploadForm.arbeitszeugnisse in Deutsch&apos;;
+					break;
+				case &apos;References&apos;:
+					categoryName = &apos;uploadForm.referenzen&apos;;
+					break;
+				case &apos;ReferencesTranslatedInGermanOrEnglish&apos;:
+					categoryName = &apos;uploadForm.referenzen in Deutsch&apos;;
+					break;
+				case &apos;BiometricPhoto&apos;:
+					categoryName = &apos;uploadForm.biometrisches Foto&apos;;
+					break;
+				case &apos;ValidPassport&apos;:
+					categoryName = &apos;uploadForm.reisepass&apos;;
+					break;
+				case &apos;Other&apos;:
+					categoryName = &apos;uploadForm.unterlagen&apos;;
+					break;
+				default:
+					return &apos;&apos;;
+			}
+
+			return {
+				...category,
+				files: [],
+				isSelectBtnActive: false,
+				name: categoryName,
+			};
+		});
+
+		setUploadForm(uploadDocumentsCategories);
+	}, [documentsCategories]);
+
+	i18n.locale = languageSelected;
+
+	/**
+	 * @desc function for compress upload img
+	 * @param {File} imageFile - object with img
+	 */
+	const compressionImg = async (imageFile) =&gt; {
+		const options = {
+			maxSizeMB: 1,
+			maxWidthOrHeight: 1920,
+			useWebWorker: true,
+		};
+
+		try {
+			return await imageCompression(imageFile, options).then((data) =&gt; data);
+		} catch (error) {
+			return error;
+		}
+	};
+
+	let maxSize = 0;
+	/**
+	 * @desc function for add files by click on upload button
+	 * @param {object} filesList - object with files
+	 * @param {event} event
+	 * @param {string} id - id selected category
+	 */
+	const handleAddFile = (filesList, id, event) =&gt; {
+		if (filesList.length &gt; 0) {
+			setDisplayLoader(true);
+		}
+
+		const filesListArr = Object.values(filesList);
+		const compressing = new Promise((res) =&gt; {
+			const compressedFiles = [];
+			filesListArr.forEach(async (file) =&gt; {
+				if (file.type === &apos;image/jpeg&apos;) {
+					await compressionImg(file).then((data) =&gt; {
+						compressedFiles.push(data);
+						res(compressedFiles);
+					});
+				} else {
+					compressedFiles.push(file);
+					res(compressedFiles);
+				}
+			});
+		});
+
+		compressing.then(async (data) =&gt; {
+			const preparedFiles = data.map((file) =&gt; {
+				const result = {
+					id: uuidv4(),
+					isSelected: false,
+					data: file,
+				};
+
+				return result;
+			});
+
+			const result = uploadForm.map((category) =&gt; {
+				if (category.id === id) {
+					maxSize =
+						uploadForm
+							.map((category) =&gt; {
+								return category.files.reduce((sum, current) =&gt; sum + current.data.size, 0);
+							})
+							.reduce((sum, size) =&gt; {
+								return sum + size;
+							}, 0) + preparedFiles.reduce((sum, current) =&gt; sum + current.data.size, 0);
+					if (maxSize / 1024 / 1024 &lt; 50) {
+						return {
+							...category,
+							files: [...category.files, ...preparedFiles],
+						};
+					}
+					setPopupMaxSize(true);
+				}
+				return category;
+			});
+
+			setUploadForm(result);
+			maxSize = result
+				.map((category) =&gt; {
+					return category.files.reduce((sum, current) =&gt; sum + current.data.size, 0);
+				})
+				.reduce((sum, size) =&gt; {
+					return sum + size;
+				}, 0);
+			setDisplayLoader(false);
+		});
+		event.target.value = &apos;&apos;;
+	};
+
+	/**
+	 * @desc function for select files by click on select button
+	 * @param {string} id - id selected category
+	 */
+	const handleSelectFiles = (id) =&gt; {
+		const result = uploadForm.map((category) =&gt; {
+			if (category.id === id &amp;&amp; category.files.length &gt; 0) {
+				return {
+					...category,
+					isSelectBtnActive: !category.isSelectBtnActive,
+				};
+			}
+
+			return category;
+		});
+
+		setUploadForm(result);
+	};
+
+	/**
+	 * @desc function for mark files by click on checkbox
+	 * @param {string} categoryId - id selected category
+	 * @param {string} fileId - id selected file
+	 * @param {bool} isSelectBtnActive - is select btn active
+	 */
+	const handleMarkFile = (categoryId, fileId, isSelectBtnActive) =&gt; {
+		if (!isSelectBtnActive) {
+			return;
+		}
+
+		const result = uploadForm.map((category) =&gt; {
+			if (category.id === categoryId) {
+				return {
+					...category,
+					files: category.files.map((file) =&gt; {
+						if (file.id === fileId) {
+							return {
+								...file,
+								isSelected: !file.isSelected,
+							};
+						}
+
+						return file;
+					}),
+				};
+			}
+
+			return category;
+		});
+
+		setUploadForm(result);
+	};
+
+	/**
+	 * @desc function for delete files by click on delete btn
+	 * @param {string} id - id selected category
+	 */
+	const handleDeleteFiles = (id) =&gt; {
+		const result = uploadForm.map((category) =&gt; {
+			if (category.id === id &amp;&amp; category.files.length &gt; 0) {
+				const deleteFilesAmount = category.files.filter((file) =&gt; file.isSelected).length;
+
+				if (deleteFilesAmount === 0) {
+					return {
+						...category,
+						files: [],
+						isSelectBtnActive: false,
+					};
+				}
+
+				return {
+					...category,
+					files: category.files.filter((file) =&gt; !file.isSelected),
+					isSelectBtnActive: false,
+				};
+			}
+
+			return category;
+		});
+
+		setUploadForm(result);
+	};
+	if (!displayApplyNow[4]) return null;
+	return (
+		&lt;section className=&apos;applyNow__page&apos;&gt;
+			&lt;div className=&apos;applyNow__note&apos;&gt;
+				&lt;img src={noteWarning} alt=&apos;note&apos; className=&apos;applyNow__noteImg&apos; /&gt;
+				&lt;div className=&apos;warning-message__text&apos;&gt;
+					&lt;p&gt;{i18n.t(&apos;uploadForm.note&apos;)}&lt;/p&gt;
+					&lt;p&gt;{i18n.t(&apos;uploadForm.high-quality photos&apos;)}&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;form className=&apos;applyNow__form&apos;&gt;
+				&lt;h2 className=&apos;applyNow__header&apos;&gt;{i18n.t(&apos;Nessesary-documents&apos;)}&lt;/h2&gt;
+
+				&lt;div className=&apos;applyNow__documentsZoneWrapper&apos;&gt;
+					&lt;ul className=&apos;applyNow__documentsHeader&apos;&gt;
+						&lt;li className=&apos;applyNow__documents&#x421;ategory applyNow__&#x421;ategoryName&apos;&gt;{i18n.t(&apos;uploadForm.document name&apos;)}&lt;/li&gt;
+						&lt;li className=&apos;applyNow__documents&#x421;ategory applyNow__&#x421;ategoryPreview&apos;&gt;{i18n.t(&apos;uploadForm.preview&apos;)}&lt;/li&gt;
+						&lt;li className=&apos;applyNow__documents&#x421;ategory applyNow__&#x421;ategoryOperations&apos;&gt;{i18n.t(&apos;uploadForm.operations&apos;)}&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;ul className=&apos;applyNow__list&apos;&gt;
+						{uploadForm.map((category, index) =&gt; (
+							&lt;li key={category.id}&gt;
+								&lt;div className=&apos;applyNow__documentsName&apos;&gt;
+									&lt;span className=&apos;applyNow__documentsText&apos;&gt;{i18n.t(category.name)}&lt;/span&gt;
+									&lt;div className=&apos;applyNow__uploadControlsMobile&apos;&gt;
+										&lt;label htmlFor={`applyNow__loadFile${index}`} className=&apos;applyNow__uploadBtn&apos;&gt;
+											&lt;input
+												id={`applyNow__loadFile${index}`}
+												className=&apos;applyNow__loadFile&apos;
+												type=&apos;file&apos;
+												onChange={(e) =&gt; handleAddFile(e.target.files, category.id, e)}
+											/&gt;
+										&lt;/label&gt;
+										&lt;button
+											aria-label=&apos;select&apos;
+											type=&apos;button&apos;
+											className={cn(&apos;applyNow__selectBtn&apos;, {
+												applyNow__selectBtnActive: category.isSelectBtnActive,
+											})}
+											onClick={() =&gt; handleSelectFiles(category.id)}
+										/&gt;
+										&lt;button
+											aria-label=&apos;delete&apos;
+											type=&apos;button&apos;
+											className=&apos;applyNow__deleteBtn&apos;
+											onClick={() =&gt; handleDeleteFiles(category.id)}
+										/&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;ul className=&apos;applyNow__documentsFilesList&apos;&gt;
+									{category.files.map((file) =&gt; (
+										&lt;li key={file.id} className=&apos;applyNow__documentsFilesItem&apos;&gt;
+											&lt;label htmlFor={`applyNow__selectFile${file.id}`} className=&apos;applyNow__selectFileLabel&apos;&gt;
+												&lt;input
+													type=&apos;checkbox&apos;
+													className=&apos;applyNow__selectFileCheckbox&apos;
+													id={`applyNow__selectFile${file.id}`}
+													checked={file.isSelected}
+													onChange={() =&gt; handleMarkFile(category.id, file.id, category.isSelectBtnActive)}
+												/&gt;
+												{category.isSelectBtnActive &amp;&amp; &lt;span className=&apos;applyNow__selectFileFakeCheckbox&apos; /&gt;}
+												&lt;span className=&apos;applyNow__selectFileText&apos;&gt;{file.data.name}&lt;/span&gt;
+											&lt;/label&gt;
+										&lt;/li&gt;
+									))}
+								&lt;/ul&gt;
+								&lt;div className=&apos;applyNow__uploadControls&apos;&gt;
+									&lt;label htmlFor={`applyNow__loadFile${index}`} className=&apos;applyNow__uploadBtn&apos;&gt;
+										&lt;input
+											id={`applyNow__loadFile${index}`}
+											className=&apos;applyNow__loadFile&apos;
+											type=&apos;file&apos;
+											onChange={(e) =&gt; handleAddFile(e.target.files, category.id, e)}
+										/&gt;
+									&lt;/label&gt;
+									&lt;button
+										aria-label=&apos;select&apos;
+										type=&apos;button&apos;
+										className={cn(&apos;applyNow__selectBtn&apos;, {
+											applyNow__selectBtnActive: category.isSelectBtnActive,
+										})}
+										onClick={() =&gt; handleSelectFiles(category.id)}
+									/&gt;
+									&lt;button
+										aria-label=&apos;delete&apos;
+										type=&apos;button&apos;
+										className=&apos;applyNow__deleteBtn&apos;
+										onClick={() =&gt; handleDeleteFiles(category.id)}
+									/&gt;
+								&lt;/div&gt;
+							&lt;/li&gt;
+						))}
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+			&lt;p className=&apos;applyNow__errors&apos;&gt;
+				&lt;div className={!notChecckedTermsOfUse ? &apos;transparent&apos; : &apos;&apos;}&gt;{i18n.t(&apos;check confirmed terms of use&apos;)}&lt;/div&gt;
+			&lt;/p&gt;
+			&lt;div className=&apos;applyNow__labelsWrapper2&apos;&gt;
+				&lt;label htmlFor=&apos;applyNow__checkbox&apos; className=&apos;applyNow__checkboxWrapper applyNow__termsOfUseWrapper&apos;&gt;
+					&lt;div className=&apos;applyNow__checkboxWrapper&apos;&gt;
+						&lt;input
+							id=&apos;applyNow__checkbox&apos;
+							type=&apos;checkbox&apos;
+							checked={applyTermsOfUse}
+							className=&apos;applyNow__checkbox&apos;
+							onChange={() =&gt; {
+								setApplyTermsOfUse(!applyTermsOfUse);
+								setNotChecckedTermsOfUse(false);
+							}}
+						/&gt;
+						&lt;img src={tick} className=&apos;applyNow__tick&apos; alt={i18n.t(&apos;I-confirm&apos;)} /&gt;
+					&lt;/div&gt;
+					&lt;div className=&apos;applyNow__checkboxTermsOfUse&apos;&gt;
+						{i18n.t(&apos;I-confirm&apos;)}
+						&lt;Link
+							onClick={() =&gt; {
+								setTimeout(() =&gt; {
+									window.scrollTo({ top: 0, behavior: &apos;smooth&apos; });
+								}, 100);
+							}}
+							to={routes.TERMS_OF_USE}
+							target=&apos;_blank&apos;
+							rel=&apos;noopener noreferrer&apos;
+							className=&apos;applyNow__termsOfUse&apos;
+						&gt;
+							{i18n.t(&apos;GDPR-Terms-and-Conditions-2&apos;)}
+						&lt;/Link&gt;
+					&lt;/div&gt;
+				&lt;/label&gt;
+				&lt;div className=&apos;applyNow__bottomButtonsWrapper applyNow__ButtonsWrapper2 applyNow__ButtonsWrapper3&apos;&gt;
+					&lt;button
+						type=&apos;button&apos;
+						className=&apos;applyNow__backButton&apos;
+						onClick={() =&gt; {
+							const copyArr = [...displayApplyNow];
+							const indexOfDisplayApplyNow = copyArr.indexOf(true);
+							copyArr[indexOfDisplayApplyNow] = false;
+							copyArr[indexOfDisplayApplyNow - 1] = true;
+							changeDisplayApplyNow(copyArr);
+							window.scrollTo({ top: 0, behavior: &apos;smooth&apos; });
+						}}
+					&gt;
+						&lt;img src={arrowLeft} alt=&apos;&apos; className=&apos;applyNow__arrowLeft&apos; /&gt;
+
+						{i18n.t(&apos;back&apos;)}
+					&lt;/button&gt;
+					&lt;button
+						type=&apos;button&apos;
+						className={
+							applyTermsOfUse
+								? &apos;applyNow__nextButton applyNow__sendAppButton&apos;
+								: &apos;applyNow__nextButton applyNow__sendAppButton applyNow__grayButton&apos;
+						}
+						onClick={async () =&gt; {
+							if (!applyTermsOfUse) {
+								setNotChecckedTermsOfUse(true);
+							}
+
+							if (applyTermsOfUse &amp;&amp; filesData.length &gt; 0) {
+								setDisplayLoader(true);
+								const formData = new FormData();
+
+								filesData.forEach((file) =&gt; {
+									formData.append(&apos;docs&apos;, file, file.name);
+								});
+								formData.append(&apos;categories&apos;, JSON.stringify(categoriesData));
+
+								await fetch(`${process.env.REACT_APP_API_URL}/api/candidates/${getUser.candidateId}/attach`, {
+									method: &apos;PATCH&apos;,
+									body: formData,
+								})
+									.then(
+										(res) =&gt; res.json(),
+										(err) =&gt; {
+											setErrorFromBack(err);
+										},
+									)
+									.then(
+										(res) =&gt; {
+											if (res) {
+												const copyArr = [...displayApplyNow];
+												const indexOfDisplayApplyNow = copyArr.indexOf(true);
+												copyArr[indexOfDisplayApplyNow] = false;
+												copyArr[indexOfDisplayApplyNow + 1] = true;
+												changeDisplayApplyNow(copyArr);
+												setDisplayLoader(false);
+											} else {
+												setDisplayLoader(false);
+												setErrorFromBack(`Error: ${JSON.stringify(res)}`);
+											}
+										},
+										(err) =&gt; {
+											setDisplayLoader(false);
+											setErrorFromBack(`Error: ${JSON.stringify(err)}`);
+										},
+									);
+							} else if (!applyTermsOfUse) {
+								setNotChecckedTermsOfUse(true);
+							} else {
+								const copyArr = [...displayApplyNow];
+								const indexOfDisplayApplyNow = copyArr.indexOf(true);
+								copyArr[indexOfDisplayApplyNow] = false;
+								copyArr[indexOfDisplayApplyNow + 1] = true;
+								changeDisplayApplyNow(copyArr);
+							}
+						}}
+					&gt;
+						{i18n.t(&apos;next-step&apos;)}
+					&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			{popupMaxSize &amp;&amp; &lt;Popup text=&apos;Total size of files should not exceed 50 MB&apos; hidePopup={() =&gt; setPopupMaxSize(false)} /&gt;}
+			{errorFromBack &amp;&amp; &lt;Popup text={errorFromBack} hidePopup={() =&gt; setErrorFromBack(&apos;&apos;)} /&gt;}
+			{displayLoader &amp;&amp; &lt;Preloader /&gt;}
+		&lt;/section&gt;
+	);
+};
+
+const storeFuncs = {
+	applyUser: funcsFromStore.applyUser,
+	changeDisplayApplyNow: funcsFromStore.applyDisplayApplyNow,
+};
+
+const storeData = (state) =&gt; ({
+	getUser: state.user,
+	displayApplyNow: state.displayApplyNow,
+	languageSelected: state.language,
+});
+
+ApplyNow5.defaultProps = {
+	languageSelected: &apos;&apos;,
+	displayApplyNow: [],
+	changeDisplayApplyNow: () =&gt; {},
+	getUser: {},
+};
+
+ApplyNow5.propTypes = {
+	languageSelected: PropTypes.string,
+	displayApplyNow: PropTypes.arrayOf(PropTypes.bool),
+	changeDisplayApplyNow: PropTypes.func,
+	getUser: PropTypes.objectOf(PropTypes.any),
+};
+
+export default connect(storeData, storeFuncs)(ApplyNow5);
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

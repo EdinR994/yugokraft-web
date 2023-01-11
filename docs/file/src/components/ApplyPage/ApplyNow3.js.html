@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/components/ApplyPage/ApplyNow3.js | yugocraft</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-register">register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-unregister">unregister</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-aboutpage">components/AboutPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-AboutPage">AboutPage</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-applypage">components/ApplyPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TermsAndConditions">TermsAndConditions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translator">translator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-forcandidatespage">components/ForCandidatesPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ForCandidates">ForCandidates</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-impressum">components/Impressum</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Impressum">Impressum</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-popup">components/Popup</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Popup">Popup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-select">components/Select</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Select">Select</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-termsofuse">components/TermsOfUse</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TermsOfUse">TermsOfUse</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store">store</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyDisplayApplyNow">applyDisplayApplyNow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyLanguage">applyLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyUser">applyUser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyUserType">applyUserType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-store">store</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-actions">store/actions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-acquireDate">acquireDate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCalendar">getCalendar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setActiveHour">setActiveHour</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setCalendar">setCalendar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setDay">setDay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setGMTChanged">setGMTChanged</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setPopupActive">setPopupActive</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setRequestAccept">setRequestAccept</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setToken">setToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getConfirmToken">getConfirmToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setConfirmToken">setConfirmToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-displayApplyNow">displayApplyNow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyError">applyError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearError">clearError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setError">setError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLanguage">getLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setLanguage">setLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getEmployer">getEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setNewEmployer">setNewEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCountries">getCountries</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDocumentsCategories">getDocumentsCategories</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-registerEmployer">registerEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setUserData">setUserData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userType">userType</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-helpers">store/helpers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-useWindowDimensions">useWindowDimensions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-reducers">store/reducers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-calendarRaducer">calendarRaducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-confirmCvReducer">confirmCvReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-displayApplyNowReducer">displayApplyNowReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-errorHandlingReducer">errorHandlingReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-languageReducer">languageReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newEmployerReducer">newEmployerReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-registrationFormReducer">registrationFormReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userDataReducer">userDataReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userTypeReducer">userTypeReducer</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/components/ApplyPage/ApplyNow3.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import &apos;./styles.scss&apos;;
+import React, { useState, useEffect } from &apos;react&apos;;
+import { v4 as uuidv4 } from &apos;uuid&apos;;
+import i18n from &apos;i18n-js&apos;;
+import { connect } from &apos;react-redux&apos;;
+import PropTypes from &apos;prop-types&apos;;
+import arrowRight from &apos;./images/arrowRight.svg&apos;;
+import plus from &apos;./images/plus.svg&apos;;
+import arrowLeft from &apos;./images/arrowLeft.svg&apos;;
+import * as funcsFromStore from &apos;../../store/store&apos;;
+import Select from &apos;../Select/Select&apos;;
+import translator from &apos;./translator&apos;;
+
+/**
+ * @desc UI for candidate registration form - step 3
+ * @param {object} displayApplyNow
+ * @param {function} changeDisplayApplyNow
+ * @param {function} applyUser
+ * @param {object} userFromRedux
+ * @param {string} languageSelected
+ * @returns {JSX.Element|null}
+ */
+const ApplyNow3 = ({ languageSelected, displayApplyNow, changeDisplayApplyNow, applyUser, userFromRedux }) =&gt; {
+	const [languageNameInputs, setLanguageNameInputs] = useState([0, 1]);
+	const [languageName, setLanguageName] = useState([]);
+	const [languageLevel, setLanguageLevel] = useState([]);
+	const [additionLanguagesAmount, setAdditionLanguagesAmount] = useState(2);
+	const [expierenceAboard, setExpierenceAboard] = useState(&apos;&apos;);
+	const [skillsInputs, setSkillsInputs] = useState([0]);
+	const [skills, setSkills] = useState([]);
+	const [skillsDescriptionsLevel, setSkillsDescriptionsLevel] = useState([]);
+	const [additionSkillsAmount, setAdditionSkillsAmount] = useState(1);
+	const [incorrectLanguageLevel, setIncorrectLanguageLevel] = useState([false]);
+	const [incorrectExpierence, setIncorrectExpierence] = useState(false);
+	const [incorrectSkills, setIncorrectSkills] = useState(false);
+	const [levelWithoutLanguage, setLevelWithoutLanguage] = useState([false]);
+
+	const saveToRedux = (userKey, key, index, value) =&gt; {
+		const languages = [];
+
+		for (let i = 0; i &lt; additionLanguagesAmount; i += 1) {
+			languages.push({ languageName: languageName[i], level: languageLevel[i] });
+		}
+
+		if (userKey === &apos;languages&apos;) {
+			languages[index] = { ...languages[index], [key]: value };
+		}
+
+		const copySkills = [];
+
+		for (let i = 0; i &lt; additionSkillsAmount; i += 1) {
+			copySkills.push({ skillName: skills[i], description: skillsDescriptionsLevel[i] });
+		}
+
+		if (userKey === &apos;skills&apos;) {
+			copySkills[index] = { ...copySkills[index], [key]: value };
+		}
+
+		const copyExpierenceAboard = key === &apos;expierenceAboard&apos; ? value : expierenceAboard;
+
+		applyUser({
+			...userFromRedux,
+			languages,
+			expierenceAboard: copyExpierenceAboard,
+			skills: copySkills,
+		});
+	};
+
+	useEffect(() =&gt; {
+		if (!userFromRedux.skills) {
+			applyUser({
+				...userFromRedux,
+				skills: [{ skillName: &apos;&apos;, description: &apos;&apos; }],
+			});
+		}
+
+		if (!userFromRedux.languages) {
+			applyUser({
+				...userFromRedux,
+				languages: [
+					{ languageName: &apos;&apos;, level: &apos;&apos; },
+					{ languageName: &apos;&apos;, level: &apos;&apos; },
+				],
+			});
+		}
+
+		if (typeof userFromRedux.expierenceAboard !== &apos;string&apos;) {
+			applyUser({
+				...userFromRedux,
+				expierenceAboard: &apos;&apos;,
+			});
+		}
+
+		if (userFromRedux.languages &amp;&amp; languageName.length !== userFromRedux.languages.length) {
+			const copyLanguageName = [];
+			const copyLevel = [];
+
+			for (let i = 0; i &lt; userFromRedux.languages.length; i += 1) {
+				copyLanguageName.push(userFromRedux.languages[i].languageName);
+				copyLevel.push(userFromRedux.languages[i].level);
+			}
+
+			setLanguageName(copyLanguageName);
+			setLanguageLevel(copyLevel);
+			if (userFromRedux.languages.length &gt; 2) {
+				const copyLanguageNameInputs = [];
+
+				for (let i = 0; i &lt; userFromRedux.languages.length; i += 1) {
+					copyLanguageNameInputs.push(i);
+				}
+
+				setAdditionLanguagesAmount(userFromRedux.languages.length);
+				setLanguageNameInputs(copyLanguageNameInputs);
+			}
+		}
+
+		if (userFromRedux.skills &amp;&amp; skills.length !== userFromRedux.skills.length) {
+			const copySkillName = [];
+			const copyDescription = [];
+			const copySkillsInputs = [];
+
+			for (let i = 0; i &lt; userFromRedux.skills.length; i += 1) {
+				copySkillName.push(userFromRedux.skills[i].skillName);
+				copyDescription.push(userFromRedux.skills[i].description);
+				copySkillsInputs.push(i);
+			}
+
+			setSkills(copySkillName);
+			setSkillsDescriptionsLevel(copyDescription);
+			setAdditionSkillsAmount(userFromRedux.skills.length);
+			setSkillsInputs(copySkillsInputs);
+		}
+
+		if (userFromRedux.expierenceAboard &amp;&amp; expierenceAboard !== userFromRedux.expierenceAboard) {
+			setExpierenceAboard(userFromRedux.expierenceAboard);
+		}
+	}, [userFromRedux, languageName.length, skills.length, expierenceAboard, applyUser]);
+
+	i18n.locale = languageSelected;
+
+	if (!displayApplyNow[2]) return null;
+
+	const next = () =&gt; {
+		let correct = true;
+
+		if (!languageLevel.length === 0) {
+			const copyIncorrectLanguageLevel = [...incorrectLanguageLevel];
+			copyIncorrectLanguageLevel[0] = true;
+			setIncorrectLanguageLevel(copyIncorrectLanguageLevel);
+			correct = false;
+		}
+
+		const copyIncorrectLanguageLevel = [...incorrectLanguageLevel];
+
+		for (let i = 0; i &lt; languageNameInputs.length; i += 1) {
+			if (languageName[i] &amp;&amp; !languageLevel[i]) {
+				copyIncorrectLanguageLevel[i] = true;
+				correct = false;
+			}
+		}
+
+		setIncorrectLanguageLevel(copyIncorrectLanguageLevel);
+
+		const copyLevelWithoutLanguage = [...levelWithoutLanguage];
+
+		for (let i = 0; i &lt; languageNameInputs.length; i += 1) {
+			if (!languageName[i] &amp;&amp; languageLevel[i]) {
+				copyLevelWithoutLanguage[i] = true;
+				correct = false;
+			}
+		}
+
+		setLevelWithoutLanguage(copyLevelWithoutLanguage);
+
+		if (correct) {
+			const copyDisplayApplyNow = [...displayApplyNow];
+			const indexOfDisplayApplyNow = copyDisplayApplyNow.indexOf(true);
+			copyDisplayApplyNow[indexOfDisplayApplyNow] = false;
+			copyDisplayApplyNow[indexOfDisplayApplyNow + 1] = true;
+
+			changeDisplayApplyNow(copyDisplayApplyNow);
+		}
+	};
+
+	let languagesVars = [
+		{ id: uuidv4(), name: &apos;Deutsch&apos;, value: &apos;Deutsch&apos; },
+		{ id: uuidv4(), name: &apos;Englisch&apos;, value: &apos;Englisch&apos; },
+		{ id: uuidv4(), name: &apos;Franz&#xF6;sisch&apos;, value: &apos;Franz&#xF6;sisch&apos; },
+		{ id: uuidv4(), name: &apos;Russisch&apos;, value: &apos;Russisch&apos; },
+		{ id: uuidv4(), name: &apos;Italienisch&apos;, value: &apos;Italienisch&apos; },
+		{ id: uuidv4(), name: &apos;Spanisch&apos;, value: &apos;Spanisch&apos; },
+		{ id: uuidv4(), name: &apos;T&#xFC;rksich&apos;, value: &apos;T&#xFC;rksich&apos; },
+	];
+
+	languagesVars = languagesVars.filter((lang) =&gt; !languageName.includes(lang.value));
+
+	if (!languagesVars.includes({ name: &apos;language&apos;, value: &apos;&apos; })) {
+		languagesVars.unshift({ id: uuidv4(), name: &apos;language&apos;, value: &apos;&apos; });
+	}
+
+	const languagesLevelVars = [
+		{ id: uuidv4(), name: &apos;level&apos;, value: &apos;&apos; },
+		{ id: uuidv4(), name: &apos;A Anf&#xE4;nger&apos;, value: &apos;A Anf&#xE4;nger&apos; },
+		{ id: uuidv4(), name: &apos;B Mittleres&apos;, value: &apos;B Mittleres&apos; },
+		{ id: uuidv4(), name: &apos;C Fortgeschritten&apos;, value: &apos;C Fortgeschritten&apos; },
+	];
+
+	let skillsVars = [
+		{ id: uuidv4(), name: &apos;Kommunikation&apos;, value: &apos;Kommunikation&apos; },
+		{ id: uuidv4(), name: &apos;Teamf&#xE4;higkeit&apos;, value: &apos;Teamf&#xE4;higkeit&apos; },
+		{ id: uuidv4(), name: &apos;Probleml&#xF6;sung&apos;, value: &apos;Probleml&#xF6;sung&apos; },
+		{ id: uuidv4(), name: &apos;Kreativit&#xE4;t&apos;, value: &apos;Kreativit&#xE4;t&apos; },
+		{ id: uuidv4(), name: &apos;Arbeitsethik&apos;, value: &apos;Arbeitsethik&apos; },
+		{ id: uuidv4(), name: &apos;Zwischenmenschliche Beziehungen&apos;, value: &apos;Zwischenmenschliche Beziehungen&apos; },
+		{ id: uuidv4(), name: &apos;Zeitmanagement&apos;, value: &apos;Zeitmanagement&apos; },
+		{ id: uuidv4(), name: &apos;F&#xFC;hrungsqualit&#xE4;t&apos;, value: &apos;F&#xFC;hrungsqualit&#xE4;t&apos; },
+		{ id: uuidv4(), name: &apos;Pr&#xE4;zision und Detailtreue&apos;, value: &apos;Pr&#xE4;zision und Detailtreue&apos; },
+	];
+
+	skillsVars = skillsVars.filter((skillVar) =&gt; !skills.includes(skillVar.value));
+
+	if (!skillsVars.includes({ name: &apos;choose-your-field-of-activity&apos;, value: &apos;&apos; })) {
+		skillsVars.unshift({ id: uuidv4(), name: &apos;choose-your-field-of-activity&apos;, value: &apos;&apos; });
+	}
+
+	const addLanguage = () =&gt; {
+		if (additionLanguagesAmount &lt; 7) {
+			let copyLanguagesFromRedax = [{ languageName: &apos;&apos;, level: &apos;&apos; }];
+
+			if (userFromRedux.languages) {
+				copyLanguagesFromRedax = [...userFromRedux.languages];
+			}
+
+			copyLanguagesFromRedax.push({ languageName: &apos;&apos;, level: &apos;&apos; });
+
+			applyUser({
+				...userFromRedux,
+				languages: copyLanguagesFromRedax,
+			});
+		}
+	};
+
+	const addSkills = () =&gt; {
+		if (additionSkillsAmount &lt; 4) {
+			let copySkillsFromRedax = [{ skillName: &apos;&apos;, description: &apos;&apos; }];
+
+			if (userFromRedux.languages) {
+				copySkillsFromRedax = [...userFromRedux.skills];
+			}
+
+			copySkillsFromRedax.push({ skillName: &apos;&apos;, description: &apos;&apos; });
+
+			applyUser({
+				...userFromRedux,
+				skills: copySkillsFromRedax,
+			});
+		}
+	};
+
+	const deleteOneElementFromArray = (array, index, setArray) =&gt; {
+		const copyArray = [...array];
+		copyArray.splice(index, 1);
+
+		if (setArray) setArray(copyArray);
+
+		return copyArray;
+	};
+
+	const deleteLanguage = (index) =&gt; {
+		setAdditionLanguagesAmount(additionLanguagesAmount - 1);
+
+		const copyLanguageNameInputs = [...languageNameInputs];
+		copyLanguageNameInputs.pop();
+		setLanguageNameInputs(copyLanguageNameInputs);
+		deleteOneElementFromArray(languageName, index, setLanguageName);
+		deleteOneElementFromArray(languageLevel, index, setLanguageLevel);
+		deleteOneElementFromArray(incorrectLanguageLevel, index, setIncorrectLanguageLevel);
+		deleteOneElementFromArray(levelWithoutLanguage, index, setLevelWithoutLanguage);
+
+		applyUser({
+			...userFromRedux,
+			languages: deleteOneElementFromArray(userFromRedux.languages, index),
+		});
+	};
+
+	const deleteSkill = (index) =&gt; {
+		setAdditionSkillsAmount(additionSkillsAmount - 1);
+		const copySkillsInputs = [...skillsInputs];
+		copySkillsInputs.pop();
+		setSkillsInputs(copySkillsInputs);
+
+		deleteOneElementFromArray(skills, index, setSkills);
+		deleteOneElementFromArray(skillsDescriptionsLevel, index, setSkillsDescriptionsLevel);
+
+		applyUser({
+			...userFromRedux,
+			skills: deleteOneElementFromArray(userFromRedux.skills, index),
+		});
+	};
+
+	const changeLanguageName = (value, index) =&gt; {
+		const copyLanguageName = [...languageName];
+		copyLanguageName[index] = value;
+		setLanguageName(copyLanguageName);
+		saveToRedux(&apos;languages&apos;, &apos;languageName&apos;, index, value);
+	};
+
+	const changeLanguageLevel = (value, index) =&gt; {
+		const copyLanguageLevel = [...languageLevel];
+		copyLanguageLevel[index] = value;
+		setLanguageLevel(copyLanguageLevel);
+		saveToRedux(&apos;languages&apos;, &apos;level&apos;, index, value);
+	};
+
+	const changeSkills = (value, index) =&gt; {
+		const copySkills = [...skills];
+		copySkills[index] = value;
+		setSkills(copySkills);
+		saveToRedux(&apos;skills&apos;, &apos;skillName&apos;, index, value);
+	};
+
+	const disableLanguagesErrors = (index) =&gt; {
+		const copyLevelWithoutLanguage = [...levelWithoutLanguage];
+		copyLevelWithoutLanguage[index] = false;
+		setLevelWithoutLanguage(copyLevelWithoutLanguage);
+	};
+
+	const disableLanguageLevelErrors = (index) =&gt; {
+		const copyIncorrectLanguageLevel = [...incorrectLanguageLevel];
+		copyIncorrectLanguageLevel[index] = false;
+		setIncorrectLanguageLevel(copyIncorrectLanguageLevel);
+	};
+
+	return (
+		&lt;section className=&apos;applyNow__page&apos;&gt;
+			&lt;form className=&apos;applyNow__form applyNow__form2&apos;&gt;
+				&lt;h2 className=&apos;applyNow__header&apos;&gt;{i18n.t(&apos;Languages-and-experience-abroad&apos;)}&lt;/h2&gt;
+
+				{languageNameInputs.map((index, arrayIndex) =&gt; {
+					if (arrayIndex &gt;= 7) return null;
+
+					return (
+						&lt;div key={index} className=&apos;applyNow__labelsWrapper&apos;&gt;
+							&lt;label htmlFor=&apos;_labelHeader&apos;&gt;
+								&lt;h3 className={arrayIndex === 0 ? &apos;applyNow__labelHeader&apos; : &apos;applyNow__labelHeaderNotReq&apos;}&gt;{i18n.t(&apos;language&apos;)}&lt;/h3&gt;
+								&lt;Select
+									values={languagesVars}
+									cb={(value) =&gt; {
+										changeLanguageName(value, index);
+									}}
+									placeHolder={
+										translator(languageName[index], (value) =&gt; {
+											const copyLanguageName = [...languageName];
+											copyLanguageName[index] = value;
+											setLanguageName(copyLanguageName);
+										}) || i18n.t(&apos;language&apos;)
+									}
+									selected={!!languageName[index]}
+									classWord={levelWithoutLanguage[index] ? &apos;applyNow__incorect &apos; : &apos;&apos;}
+									click={() =&gt; {
+										disableLanguagesErrors(index);
+									}}
+								/&gt;
+							&lt;/label&gt;
+
+							&lt;label htmlFor=&apos;labelHeader&apos; className=&apos;applyNow__label&apos;&gt;
+								&lt;h3 className=&apos;applyNow__labelHeader&apos;&gt;{i18n.t(&apos;level&apos;)}&lt;/h3&gt;
+								&lt;Select
+									values={languagesLevelVars}
+									cb={(value) =&gt; {
+										changeLanguageLevel(value, index);
+									}}
+									placeHolder={
+										translator(languageLevel[index], (value) =&gt; {
+											const copyLanguageLevel = [...languageLevel];
+											copyLanguageLevel[index] = value;
+											setLanguageLevel(copyLanguageLevel);
+										}) || i18n.t(&apos;level&apos;)
+									}
+									selected={!!languageLevel[index]}
+									classWord={
+										(incorrectLanguageLevel[index] &amp;&amp; languageName[index] &amp;&amp; !languageLevel[index] ? &apos;applyNow__incorect &apos; : &apos;&apos;) +
+										(index &gt; 1 ? &apos; select__short&apos; : &apos;&apos;)
+									}
+									click={() =&gt; {
+										disableLanguageLevelErrors(index);
+									}}
+								/&gt;
+
+								{index &gt; 1 ? (
+									&lt;div
+										role=&apos;button&apos;
+										onKeyPress={() =&gt; {}}
+										tabIndex={0}
+										className=&apos;applyNow__delete&apos;
+										onClick={() =&gt; {
+											deleteLanguage(index);
+										}}
+									&gt;
+										&amp;times;
+									&lt;/div&gt;
+								) : null}
+							&lt;/label&gt;
+						&lt;/div&gt;
+					);
+				})}
+
+				&lt;label htmlFor=&apos;_addButton&apos; className=&apos;applyNow__addWrapper&apos;&gt;
+					&lt;button id=&apos;_addButton&apos; type=&apos;button&apos; className=&apos;applyNow__addButton&apos; onClick={addLanguage}&gt;
+						&lt;img src={plus} alt={i18n.t(&apos;add-one-more-language&apos;)} /&gt;
+					&lt;/button&gt;
+					&lt;h3 className=&apos;applyNow__addText&apos;&gt;{i18n.t(&apos;add-one-more-language&apos;)}&lt;/h3&gt;
+				&lt;/label&gt;
+
+				&lt;label htmlFor=&apos;_textareaLabel&apos; className=&apos;applyNow__textareaLabel&apos;&gt;
+					&lt;h3 className=&apos;applyNow__labelHeader&apos;&gt;{i18n.t(&apos;Experience-abroad&apos;)}&lt;/h3&gt;
+					&lt;textarea
+						className={
+							incorrectExpierence
+								? &apos;applyNow__textarea applyNow__textareaExpierence applyNow__incorect&apos;
+								: &apos;applyNow__textarea applyNow__textareaExpierence&apos;
+						}
+						placeholder={expierenceAboard || i18n.t(&apos;describe-your-experience-abroad&apos;)}
+						onFocus={() =&gt; setIncorrectExpierence(false)}
+						value={expierenceAboard || &apos;&apos;}
+						maxLength=&apos;1250&apos;
+						onChange={(e) =&gt; {
+							setExpierenceAboard(e.target.value);
+							saveToRedux(null, &apos;expierenceAboard&apos;, null, e.target.value);
+						}}
+					/&gt;
+				&lt;/label&gt;
+
+				{skillsInputs.map((index) =&gt; {
+					return (
+						&lt;div key={`${index}s`} className=&apos;applyNow__labelsWrapper applyNow__skillsWrapper&apos;&gt;
+							&lt;label htmlFor=&apos;Now__labelHeader&apos;&gt;
+								&lt;h3 className=&apos;applyNow__labelHeader&apos;&gt;{i18n.t(&apos;skills-up-to&apos;)}&lt;/h3&gt;
+								&lt;Select
+									values={skillsVars}
+									cb={(value) =&gt; {
+										changeSkills(value, index);
+									}}
+									placeHolder={
+										translator(skills[index], (value) =&gt; {
+											const copySkills = [...skills];
+											copySkills[index] = value;
+											setSkills(copySkills);
+										}) || i18n.t(&apos;choose-your-field-of-activity&apos;)
+									}
+									selected={!!skills[index]}
+									classWord={(incorrectSkills ? &apos;applyNow__incorect &apos; : &apos;&apos;) + (index ? &apos; select__short&apos; : &apos;&apos;)}
+									click={() =&gt; {
+										setIncorrectSkills(false);
+									}}
+								/&gt;
+							&lt;/label&gt;
+
+							&lt;label htmlFor=&apos;w__textareaLabel&apos; className=&apos;applyNow__textareaLabel applyNow__textareaSkillsExpierenceLabel&apos;&gt;
+								&lt;h3 className=&apos;applyNow__labelHeaderNotReq&apos;&gt;{i18n.t(&apos;Description&apos;)}&lt;/h3&gt;
+								&lt;div className={index ? &apos;applyNow__labelTextArea applyNow__labelTextAreaShort&apos; : &apos;applyNow__labelTextArea&apos;}&gt;
+									&lt;textarea
+										className=&apos;applyNow__textarea applyNow__textareaSkillsExpierence&apos;
+										placeholder={i18n.t(&apos;Describe-your-skills-and-experience&apos;)}
+										value={skillsDescriptionsLevel[index] || &apos;&apos;}
+										maxLength=&apos;1250&apos;
+										onChange={(e) =&gt; {
+											const copySkillsDescriptionsLevel = [...skillsDescriptionsLevel];
+											copySkillsDescriptionsLevel[index] = e.target.value;
+											setSkillsDescriptionsLevel(copySkillsDescriptionsLevel);
+											saveToRedux(&apos;skills&apos;, &apos;description&apos;, index, e.target.value);
+										}}
+									/&gt;
+									{index ? (
+										&lt;div
+											role=&apos;button&apos;
+											onKeyPress={() =&gt; {}}
+											tabIndex={0}
+											className=&apos;applyNow__delete&apos;
+											onClick={() =&gt; {
+												deleteSkill(index);
+											}}
+										&gt;
+											&amp;times;
+										&lt;/div&gt;
+									) : null}
+								&lt;/div&gt;
+							&lt;/label&gt;
+						&lt;/div&gt;
+					);
+				})}
+
+				&lt;label htmlFor=&apos;ow__addWrapper&apos; className=&apos;applyNow__addWrapper&apos;&gt;
+					&lt;button id=&apos;ow__addWrapper&apos; type=&apos;button&apos; className=&apos;applyNow__addButton&apos; onClick={addSkills}&gt;
+						&lt;img src={plus} alt={i18n.t(&apos;Add-one-more-field&apos;)} /&gt;
+					&lt;/button&gt;
+					&lt;h3 className=&apos;applyNow__addText&apos;&gt;{i18n.t(&apos;Add-one-more-field&apos;)}&lt;/h3&gt;
+				&lt;/label&gt;
+			&lt;/form&gt;
+
+			&lt;div className=&apos;applyNow__labelsWrapper applyNow__ButtonsWrapper2&apos;&gt;
+				&lt;button
+					type=&apos;button&apos;
+					className=&apos;applyNow__backButton&apos;
+					onClick={() =&gt; {
+						const copyDisplayApplyNow = [...displayApplyNow];
+						const indexOfDisplayApplyNow = copyDisplayApplyNow.indexOf(true);
+						copyDisplayApplyNow[indexOfDisplayApplyNow] = false;
+						copyDisplayApplyNow[indexOfDisplayApplyNow - 1] = true;
+						changeDisplayApplyNow(copyDisplayApplyNow);
+						window.scrollTo({ top: 0, behavior: &apos;smooth&apos; });
+					}}
+				&gt;
+					&lt;img src={arrowLeft} alt=&apos;&apos; className=&apos;applyNow__arrowLeft&apos; /&gt;
+
+					{i18n.t(&apos;back&apos;)}
+				&lt;/button&gt;
+
+				&lt;button
+					type=&apos;button&apos;
+					className=&apos;applyNow__nextButton&apos;
+					onClick={() =&gt; {
+						next();
+						window.scrollTo({ top: 0, behavior: &apos;smooth&apos; });
+					}}
+				&gt;
+					{i18n.t(&apos;next-step&apos;)}
+					&lt;img src={arrowRight} alt=&apos;&apos; className=&apos;applyNow__arrowRight&apos; /&gt;
+				&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/section&gt;
+	);
+};
+
+const storeFuncs = {
+	applyUser: funcsFromStore.applyUser,
+	changeDisplayApplyNow: funcsFromStore.applyDisplayApplyNow,
+};
+
+const storeData = (state) =&gt; ({
+	userFromRedux: state.user,
+	displayApplyNow: state.displayApplyNow,
+	languageSelected: state.language,
+});
+
+ApplyNow3.defaultProps = {
+	languageSelected: &apos;&apos;,
+	displayApplyNow: [],
+	changeDisplayApplyNow: () =&gt; {},
+	userFromRedux: {},
+	applyUser: () =&gt; {},
+};
+
+ApplyNow3.propTypes = {
+	languageSelected: PropTypes.string,
+	displayApplyNow: PropTypes.arrayOf(PropTypes.bool),
+	changeDisplayApplyNow: PropTypes.func,
+	userFromRedux: PropTypes.objectOf(PropTypes.any),
+	applyUser: PropTypes.func,
+};
+
+export default connect(storeData, storeFuncs)(ApplyNow3);
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

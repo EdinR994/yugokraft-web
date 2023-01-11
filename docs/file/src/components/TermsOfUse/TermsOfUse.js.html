@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/components/TermsOfUse/TermsOfUse.js | yugocraft</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-register">register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-unregister">unregister</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-aboutpage">components/AboutPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-AboutPage">AboutPage</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-applypage">components/ApplyPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TermsAndConditions">TermsAndConditions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-translator">translator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-forcandidatespage">components/ForCandidatesPage</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ForCandidates">ForCandidates</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-impressum">components/Impressum</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Impressum">Impressum</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-popup">components/Popup</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Popup">Popup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-select">components/Select</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Select">Select</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components-termsofuse">components/TermsOfUse</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TermsOfUse">TermsOfUse</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store">store</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyDisplayApplyNow">applyDisplayApplyNow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyLanguage">applyLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyUser">applyUser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyUserType">applyUserType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-store">store</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-actions">store/actions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-acquireDate">acquireDate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCalendar">getCalendar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setActiveHour">setActiveHour</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setCalendar">setCalendar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setDay">setDay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setGMTChanged">setGMTChanged</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setPopupActive">setPopupActive</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setRequestAccept">setRequestAccept</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setToken">setToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getConfirmToken">getConfirmToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setConfirmToken">setConfirmToken</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-displayApplyNow">displayApplyNow</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-applyError">applyError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearError">clearError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setError">setError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLanguage">getLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setLanguage">setLanguage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getEmployer">getEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setNewEmployer">setNewEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCountries">getCountries</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDocumentsCategories">getDocumentsCategories</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-registerEmployer">registerEmployer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setUserData">setUserData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userType">userType</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-helpers">store/helpers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-useWindowDimensions">useWindowDimensions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store-reducers">store/reducers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-calendarRaducer">calendarRaducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-confirmCvReducer">confirmCvReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-displayApplyNowReducer">displayApplyNowReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-errorHandlingReducer">errorHandlingReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-languageReducer">languageReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-newEmployerReducer">newEmployerReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-registrationFormReducer">registrationFormReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userDataReducer">userDataReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-userTypeReducer">userTypeReducer</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/components/TermsOfUse/TermsOfUse.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React from &apos;react&apos;;
+import &apos;./style.scss&apos;;
+import i18n from &apos;i18n-js&apos;;
+
+/**
+ * @desc UI for Terms of Use screen
+ * @returns {JSX.Element}
+ */
+const TermsOfUse = () =&gt; {
+	if (i18n.locale !== &apos;de&apos;) {
+		return (
+			&lt;article className=&apos;termsOfUse&apos;&gt;
+				&lt;h1 className=&apos;termsOfUse__header&apos;&gt;Data protection&lt;/h1&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Scope&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					This data protection statement explains to users the nature, scope and purposes of the collection and use of personal data by the
+					responsible provider YUGOKRAFT GmbH, Leipziger Platz 15, 10017 Berlin, Deutschland,{&apos; &apos;}
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;mailto: datenschutz@yugokraft.de&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						datenschutz@yugokraft.de
+					&lt;/a&gt;
+					, +49 30 25894066, on this website.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Access data/server log files&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					YUGOKRAFT GmbH (or its web space provider) collects data about every access to the website (so-called server log files). The
+					access data includes:
+					&lt;br /&gt;
+					Name of the website accessed, file, date and time of access, amount of data transferred, notification of successful access,
+					browser type and version, the user&#x2019;s operating system, referrer URL (the page visited prior), IP address and the requesting
+					provider. &lt;br /&gt;
+					YUGOKRAFT GmbH uses the log data only for statistical evaluations for the purpose of operating, security and optimisation of the
+					website. However, YUGOKRAFT GmbH reserves the right to subsequently check the log data if there is a justified suspicion of
+					illegal use based on concrete evidence. By visiting the website, information about the access (date, time, page accessed) may be
+					stored on the server. This does not constitute an evaluation of personal data (e.g. name, address or email address).
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Handling of personal data&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					Personal data is information with the help of which a person can be identified, i.e. information that can be traced back to a
+					person. This includes the name, email address or telephone number, but data about preferences, hobbies, memberships or which
+					websites were viewed by somebody are also considered personal data. &lt;br /&gt;
+					Personal data is only collected, used and passed on by YUGOKRAFT GmbH if this is permitted by the law or if the user agrees to the
+					collection of data. &lt;br /&gt;
+					If personal data is collected, this is only done, if possible, with the prior consent of the user of the website. The data will
+					not be passed on to third parties without the express consent of the user. We expressly point out that the transmission of data on
+					the Internet (e.g. by email) may have security gaps. A comprehensive protection of data against access by third parties is not
+					possible. We cannot accept any liability for any damages caused by such security gaps. The use of all published contact data by
+					third parties for advertising purposes is expressly prohibited. &lt;br /&gt;
+					YUGOKRAFT GmbH reserves the right to carry out a credit check on individuals applying for a flat using the application form. In
+					case of a rejection, application documents are not saved and stored, but are disposed of professionally!
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Recipients of personal data&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					YUGOKRAFT GmbH only transfers data to external processors if it has concluded an agreement with them that meets the legal
+					requirements for processor contracts. YUGOKRAFT GmbH only transfers personal data to processors outside the European Union if an
+					adequate level of data protection is guaranteed.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Contact&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					When contacting YUGOKRAFT GmbH (e.g. via contact form, telephone or email), the user&#x2019;s details will be stored for the purpose of
+					processing the enquiry and in the event that follow-up questions arise. &lt;br /&gt;
+					YUGOKRAFT GmbH records users&#x2019; master data as entered in the enquiry and contact form (salutation, name, email) as well as
+					additional information that is part of a contact enquiry and is designated as voluntary information. By submitting his or her
+					consent, the user agrees that YUGOKRAFT GmbH may store and use (mainly for the purpose of sending concrete information on projects
+					of YUGOKRAFT GmbH) this master data and additional information for contact, information and marketing purposes (contacts that
+					serve to process your project request; regular newsletter dispatch is excluded).
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Distribution&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					YUGOKRAFT GmbH has a sales network comprising direct sales and sales partners. User data will therefore be forwarded to sales
+					partners and agents commissioned by YUGOKRAFT GmbH for processing, but only for the individual processing of the enquiry, not for
+					their advertising and marketing purposes.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Newsletter&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					YUGOKRAFT GmbH uses the newsletter to inform users about offers. &lt;br /&gt;
+					If the user would like to receive the YUGOKRAFT newsletter, YUGOKRAFT GmbH requires a valid email address from the user as well as
+					information that allows YUGOKRAFT GmbH to verify that the user is the owner of the email address/post address provided or that the
+					owner of the email address/post address agrees to receive the newsletter. &lt;br /&gt;
+					Further data will not be collected. This data is only used for sending the newsletter and will not be passed on to third parties.
+					&lt;br /&gt;
+					When registering for the newsletter, YUGOKRAFT GmbH saves the user&#x2019;s IP address and the date of registration. This storage is only
+					used as proof in the event that a third party misuses an email address and registers to receive the newsletter without the
+					knowledge of the entitled person. &lt;br /&gt;
+					YUGOKRAFT GmbH is therefore entitled to send information to the participating user by post or email after registration for the
+					newsletter (provided this data was provided when the user contacted YUGOKRAFT GmbH). This information can be oriented towards the
+					user&#x2019;s individual interests. The alignment to individual interests results from the data provided by the user.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Unsubscribe from newsletter&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					Consent to the storage of the data, the email address and its use for sending the newsletter can be revoked by the user at any
+					time free of charge. The revocation can be done via an unsubscribe link in the newsletter of YUGOKRAFT GmbH itself or by sending a
+					message to the email address: &lt;br /&gt;
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;mailto: datenschutz@yugokraft.de&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						datenschutz@yugokraft.de
+					&lt;/a&gt;
+					&lt;br /&gt;
+					Upon revocation, all master data and voluntary information will be blocked by the system operator and deleted after the statutory
+					retention period has expired.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Integration of third-party services and content&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					It is possible that third-party content, such as videos from YouTube, map material from Google Maps, RSS feeds or graphics from
+					other websites may be integrated within this online offer. This always presupposes that the providers of this content (hereinafter
+					referred to as &#x201C;third-party providers&#x201D;) are aware of the IP address of the users. Without the IP address, they would not be able
+					to send the content to the browser of the respective user. The IP address is therefore necessary for the display of this content.
+					YUGOKRAFT GmbH endeavours to use only content whose respective providers use the IP address solely for the purpose of provision of
+					the content. However, YUGOKRAFT GmbH has no influence on whether or not the third-party providers store the IP address, e.g. for
+					statistical purposes. As far as YUGOKRAFT GmbH is aware of this, the users will be informed.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Cookies&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					Cookies are small files that enable specific information relating to the device to be stored on the user&#x2019;s access device (PC,
+					smartphone or similar). On the one hand, they serve the user-friendliness of websites and thus the users (e.g. storage of login
+					data). On the other hand, they are used to record statistical data on website usage and thereby enable analysis for the purpose of
+					improving the services offered. Users can influence the use of cookies. &lt;br /&gt;
+					When you surf our website for the first time, we will ask you for your permission regarding which cookies we may use. Without your
+					consent, we only use those cookies that are absolutely necessary for the operation of the website. You may of course revoke any
+					consent to the cookies we have set at any time without providing reasons. Please note that blocking or deleting cookies may affect
+					your online experience and prevent you from fully using this website.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Google Analytics&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					This website uses Google Analytics, a web analysis service of Google Inc. (&#x201C;Google&#x201D;). Google Analytics uses so-called &#x201C;cookies&#x201D;,
+					text files that are stored on the user&#x2019;s computer, which enable an analysis of the use of the website by them. The information
+					generated by the cookie about the use of the website by the user is usually transferred to a Google server in the USA and stored
+					there. &lt;br /&gt;
+					The IP address of the users is shortened by Google within member states of the European Union or in other states which are party
+					to the Agreement on the European Economic Area; the personal data is thus made anonymous. &lt;br /&gt;
+					The IP address transmitted by the user&#x2019;s browser within the framework of Google Analytics is not merged with other Google data.
+					Users can prevent the storage of cookies by adjusting their browser settings accordingly; YUGOKRAFT GmbH points out to users that
+					in this case not all functions of the website may be fully available. Furthermore, users can prevent the collection of data
+					generated by the cookie and related to their use of the website (including their IP address) being sent to Google and the
+					processing of this data by Google by downloading and installing the browser plug-in available at the following link:
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;http://tools.google.com/dlpage/gaoptout?hl=de&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						http://tools.google.com/dlpage/gaoptout?hl=de
+					&lt;/a&gt;
+					. &lt;br /&gt;
+					Further information on Google&#x2019;s use of data for advertising purposes, setting and objection options can be found on Google&#x2019;s
+					websites:{&apos; &apos;}
+					&lt;a
+						className=&apos;termsOfUse__link&apos;
+						target=&apos;_blank&apos;
+						href=&apos;https://www.google.com/intl/de/policies/privacy/partners/&apos;
+						rel=&apos;noopener noreferrer&apos;
+					&gt;
+						https://www.google.com/intl/de/policies/privacy/partners/
+					&lt;/a&gt;{&apos; &apos;}
+					(&#x201C;Data use by Google when you use websites or apps of our partners&#x201D;),
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;http://www.google.com/policies/technologies/ads&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						http://www.google.com/policies/technologies/ads
+					&lt;/a&gt;{&apos; &apos;}
+					(&#x201C;Data use for advertising purposes&#x201D;),
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;http://www.google.de/settings/ads&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						http://www.google.de/settings/ads
+					&lt;/a&gt;
+					(&#x201C;Manage information that Google uses to show you advertisements&#x201D;) and
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;http://www.google.com/ads/preferences/&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						http://www.google.com/ads/preferences/
+					&lt;/a&gt;
+					(&#x201C;Determine which advertisements Google shows you&#x201D;).
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Use of Facebook social media plug-ins&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					This website uses social media plug-ins (&#x201C;plug-ins&#x201D;) of the social media network facebook.com, which is operated by Facebook
+					Ireland Ltd, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland (&#x201C;Facebook&#x201D;). The plug-ins can be recognised by one of
+					the Facebook logos (white &#x201C;f&#x201D; on blue tile, the word &#x201C;Like&#x201D; or a &#x201C;Thumbs up&#x201D; sign) or are marked with the addition &#x201C;Facebook
+					social media plug-in&#x201D;. The list and appearance of the Facebook social media plug-ins can be viewed here:
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://developers.facebook.com/docs/plugins/&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://developers.facebook.com/docs/plugins/
+					&lt;/a&gt;
+					. &lt;br /&gt;
+					When a user calls up a website of this offer that contains such a plug-in, his/her browser establishes a direct connection with
+					the Facebook servers. The content of the plug-in is transmitted by Facebook directly to your browser, which integrates it into the
+					website. YUGOKRAFT GmbH therefore has no influence on the extent of the data that Facebook collects with the help of this plug-in
+					and therefore informs the users according to its state of knowledge: by integrating the plug-in, Facebook receives the information
+					that a user has called up the corresponding page of the website. If the user is logged in to Facebook, Facebook can assign the
+					visit to his or her Facebook account. If users interact with the plug-ins, for example by pressing the Like button or posting a
+					comment, the corresponding information is transmitted directly from their browser to Facebook and stored there. If a user is not a
+					member of Facebook, it is still possible for Facebook to find out his or her IP address and store it. &lt;br /&gt;
+					The purpose and scope of the data collection and the further processing and use of the data by Facebook, as well as the relevant
+					rights and setting options to protect the privacy of users, can be found in the Facebook privacy policy:
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://www.facebook.com/about/privacy/&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://www.facebook.com/about/privacy/
+					&lt;/a&gt;
+					. &lt;br /&gt;
+					If a user is a Facebook member and does not want Facebook to collect data about him or her via the website and associate it with
+					his or her membership data stored on Facebook, he or she must log out of Facebook before visiting the website. Further settings
+					and objections to the use of data for advertising purposes are possible within the Facebook profile settings:
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://www.facebook.com/settings?tab=ads&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://www.facebook.com/settings?tab=ads
+					&lt;/a&gt;
+					.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Use of Instagram social plug-ins&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					Our website uses social plug-ins provided by Instagram, which is operated by Instagram LLC., 1601 Willow Road, Menlo Park, CA
+					94025, United States (&#x201C;Instagram&#x201D;). The plug-ins are marked with an Instagram logo, e.g. in the form of an &#x201C;Instagram camera&#x201D;. If
+					you visit any part of our website that contains such a plug-in, your browser will establish a direct connection with the Instagram
+					servers. Instagram transmits the content of the plug-in directly to your browser and integrates it in the website. Through this
+					integration, Instagram receives notification that your browser has accessed the corresponding part of our website even if you do
+					not have any Instagram profile of your own or are not currently logged onto Instagram. Your browser sends this information
+					(including your IP address) directly to an Instagram server in the United States, where it is stored. &lt;br /&gt;
+					If you are currently logged onto Instagram, it can directly link your visit to our website with your Instagram account. If you
+					interact with the plug-ins, e.g. by clicking on the &#x201C;Instagram&#x201D; button, this information will also be automatically sent to and
+					stored on an Instagram server. In addition, the information will be published in your Instagram account and shown to your contacts
+					there. &lt;br /&gt;
+					Details of the purpose of collecting, processing and using the data and the scope of such activities by Instagram as well as your
+					rights in this regard and the settings available to you for protecting your privacy can be found in Instagram&#x2019;s privacy at
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://help.instagram.com/155833707900388/&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://help.instagram.com/155833707900388/
+					&lt;/a&gt;{&apos; &apos;}
+					&lt;br /&gt;
+					If you don&#x2019;t want Instagram to directly link the data collected from our website with your Instagram account, you must log off
+					from Instagram before visiting our website. You can also prevent your browser from loading Instagram plug-ins, e.g. by using the
+					&#x201C;NoScript&#x201D; script blocker (
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;http://noscript.net&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						http://noscript.net
+					&lt;/a&gt;
+					).
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Use of Twitter plug-ins&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					Our website integrates plug-ins provided by Twitter Inc. (&#x201C;Twitter&#x201D;). You can recognise the Twitter plugins (&#x201C;tweet&#x201D; button) by
+					the Twitter logo on our website. An overview of the tweet buttons can be found here ({&apos; &apos;}
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://about.twitter.com/resources/buttons&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://about.twitter.com/resources/buttons
+					&lt;/a&gt;
+					). &lt;br /&gt;
+					If you access any part of our website containing one of these plug-ins, this will establish a direct link between your browser and
+					the Twitter server. In this way, Twitter will know that you have visited our website with your IP address. If you click on the
+					Twitter &#x201C;tweet&#x201D; button while you are logged into your Twitter account, you can share the contents of our website on your Twitter
+					profile. This allows Twitter to link the visit to our website with your user account. Please note that as the operator of this
+					website we have no knowledge of the content of the transmitted data or how it is used by Twitter. If you do not want Twitter to be
+					able to link your visit to our website, make sure you first log out from your Twitter account. Further information can be found in
+					Twitter&#x2019;s privacy policy at{&apos; &apos;}
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://twitter.com/privacy&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://twitter.com/privacy
+					&lt;/a&gt;
+					.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Use of LinkedIn social plug-ins&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					Our website uses functions provided by LinkedIn. These services are provided by LinkedIn Corporation, 2029 Stierlin Court,
+					Mountain View, CA 94043, United States. &lt;br /&gt;
+					Whenever you visit any part of our website containing LinkedIn functions, a connection with LinkedIn servers is established.
+					LinkedIn is informed that you have visited our website with your IP address. If you click on the LinkedIn &#x201C;Recommend&#x201D; button and
+					are logged into your LinkedIn account, LinkedIn is able to link your visit to our website with you and your user account. Please
+					note that as the operator of this website we have no knowledge of the content of the transmitted data or how it is used by
+					LinkedIn. &lt;br /&gt;
+					The LinkedIn plugin is used on the basis of Article 6 (1) (f) of the European General Data Protection Regulation. The website
+					operator has a legitimate interest in the widest possible visibility in social media. &lt;br /&gt;
+					Further information can be found in LinkedIn&#x2019;s privacy policy at
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://www.linkedin.com/legal/privacy-policy&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://www.linkedin.com/legal/privacy-policy
+					&lt;/a&gt;
+					.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Use of YouTube social plug-ins&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					This website may also include a plug-in provided by YouTube, a company owned by Google Inc., domiciled in San Bruno, California,
+					United States. As soon as you visit a page on our website featuring a YouTube plug-in, a connection will be established with the
+					YouTube servers. In this connection, the YouTube server will be told the specific part of our website you have visited. If you are
+					simultaneously logged into your YouTube account, YouTube will be able to directly link your Internet activities with your personal
+					profile. You can prevent this by first logging out of your account. Further information on how YouTube collects and uses your data
+					can be found in YouTube&#x2019;s privacy policy at
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;www.youtube.com&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						www.youtube.com
+					&lt;/a&gt;
+					.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Revocation, changes, corrections and updates&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					The user has the right to request information free of charge about the personal data stored about him/her. In addition, the user
+					has the right to correct incorrect data and to block and delete his/her personal data, provided that this does not conflict with
+					any legal storage obligation. The user also has the right to limit processing, the right of revocation, objection and the right to
+					data transferability. &lt;br /&gt;
+					&lt;br /&gt;
+					YUGOKRAFT GmbH reserves the right to amend or supplement this data protection declaration if and to the extent that this is
+					necessary in the interest of simple and secure processing and in particular to prevent misuse.
+				&lt;/p&gt;
+				&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;Data protection officer&lt;/h2&gt;
+				&lt;p className=&apos;termsOfUse__text&apos;&gt;
+					YUGOKRAFT GmbH has a data protection officer (&#x201C;DPO&#x201D;), who is responsible for ensuring compliance with data protection legislation.
+					The data protection officer at YUGOKRAFT GmbH or the data protection officer&#x2019;s office are available to you at all times if you
+					have any questions or concerns relating to the processing of your personal data or any other matters regarding data protection.
+					You can contact the data protection officer, Mr. Jan Seeger, at YUGOKRAFT GmbH via{&apos; &apos;}
+					&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;mailto: datenschutz@yugokraft.de&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						datenschutz@yugokraft.de
+					&lt;/a&gt;
+					.
+				&lt;/p&gt;
+			&lt;/article&gt;
+		);
+	}
+	// if (i18n.locale === &apos;sh&apos;) {
+	// 	return (
+	// 		&lt;article className=&apos;termsOfUse&apos;&gt;
+	// 			&lt;h1 className=&apos;termsOfUse__header&apos;&gt;{i18n.t(&apos;Datenschutz&apos;)}&lt;/h1&gt;
+	//
+	// 			&lt;p className=&apos;termsOfUse__text&apos;&gt;YUGOKRAFT &#x161;titi privatnost korisnika u najve&#x107;oj mogu&#x107;oj mjeri.&lt;/p&gt;
+	// 			&lt;br /&gt;
+	// 			&lt;br /&gt;
+	// 			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+	// 				YUGOKRAFT se obavezuje da &#x107;e u dobroj namjeri i isklju&#x10D;ivo u svrhu posredovanja pri zaposlenju koristiti podatke dobijene od
+	// 				korisnika tokom kori&#x161;tenja platforme YUGOKRAFT, te da privatne podatke ne&#x107;e distribuirati niti prodavati tre&#x107;oj strani, osim uz
+	// 				dozvolu korisnika.
+	// 			&lt;/p&gt;
+	// 			&lt;br /&gt;
+	// 			&lt;br /&gt;
+	// 			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+	// 				YUGOKRAFT mo&#x17E;e u skladu sa zakonom prikupljati odre&#x111;ene podatke o korisnicima dobijene tokom kori&#x161;tenja portala (isklju&#x10D;ivo podaci
+	// 				o ra&#x10D;unaru i podaci o internet-provideru) ili podatke unesene u postupku prijave na platformu. Ove podatke YUGOKRAFT koristi kako
+	// 				bi imao informacije o korisnicima koji ga koriste, te na taj na&#x10D;in pobolj&#x161;ao platformu i njene sadr&#x17E;aje dodatno usmjerio i
+	// 				prilagodio onima koji ga posje&#x107;uju.
+	// 			&lt;/p&gt;
+	// 			&lt;br /&gt;
+	// 			&lt;br /&gt;
+	// 			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+	// 				YUGOKRAFT se obavezuje da &#x107;e &#x10D;uvati privatnost korisnika platforme, osim u slu&#x10D;aju te&#x161;kog kr&#x161;enja pravila platforme ili
+	// 				nezakonitih aktivnosti korisnika.
+	// 			&lt;/p&gt;
+	// 			&lt;br /&gt;
+	// 			&lt;br /&gt;
+	// 			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+	// 				U svrhu monitoringa posjeta platformi i na&#x10D;ina kori&#x161;tenja iste, YUGOKRAFT koristi Google Analytics. Informacije o za&#x161;titi
+	// 				privatnosti mo&#x17E;ete pogledati ovde:
+	// 			&lt;/p&gt;
+	// 			&lt;div className=&apos;termsOfUse__linksWrapper&apos;&gt;
+	// 				&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Web&apos;)}&lt;/p&gt;
+	// 				&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://policies.google.com/privacy?hl=en-US&apos; rel=&apos;noopener noreferrer&apos;&gt;
+	// 					https://policies.google.com/privacy?hl=en-US
+	// 				&lt;/a&gt;
+	// 			&lt;/div&gt;
+	// 		&lt;/article&gt;
+	// 	);
+	// }
+
+	return (
+		&lt;article className=&apos;termsOfUse&apos;&gt;
+			&lt;h1 className=&apos;termsOfUse__header&apos;&gt;{i18n.t(&apos;Datenschutz&apos;)}&lt;/h1&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;datenschultz-1&apos;)}&lt;/p&gt;
+			&lt;br /&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;datenschultz-2&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Verantwortlicher&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Verantwortlicher-description-1&apos;)}&lt;/p&gt;
+			&lt;br /&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Verantwortlicher-description-2&apos;)}&lt;/p&gt;
+			&lt;div className=&apos;termsOfUse__contactWrapper&apos;&gt;
+				&lt;div&gt;
+					&lt;p className=&apos;termsOfUse__microHeader&apos;&gt;
+						{i18n.t(&apos;Yugokraft GmbH&apos;)}
+						&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Leipziger Platz 15&apos;)}&lt;/p&gt;
+						&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;10117 Berlin&apos;)}&lt;/p&gt;
+					&lt;/p&gt;
+				&lt;/div&gt;
+
+				&lt;div&gt;
+					&lt;p className=&apos;termsOfUse__microHeader&apos;&gt;
+						{i18n.t(&apos;Kontakt&apos;)}
+						&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Telefon: +49 (0) 30 25894066&apos;)}&lt;/p&gt;
+						&lt;div className=&apos;termsOfUse__linksWrapper&apos;&gt;
+							&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;E-Mail&apos;)}&lt;/p&gt;
+							&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;datenschutz@yugokraft.de&apos; rel=&apos;noopener noreferrer&apos;&gt;
+								datenschutz@yugokraft.de
+							&lt;/a&gt;
+						&lt;/div&gt;
+
+						&lt;div className=&apos;termsOfUse__linksWrapper&apos;&gt;
+							&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Web&apos;)}&lt;/p&gt;
+							&lt;a className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; href=&apos;https://yugokraft.de&apos; rel=&apos;noopener noreferrer&apos;&gt;
+								https://yugokraft.de
+							&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Welche personenbezogenen Daten&apos;)}&lt;/h2&gt;
+			&lt;ul&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Informationen &#xFC;ber den Browsertyp&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Das Betriebssystem des Abrufger&#xE4;tes&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Die IP-Adresse des Abrufger&#xE4;tes&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Datum und Uhrzeit des Zugriffs&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Websites und Ressorucen&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Websites&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Meldung, ob der Abruf erfolgreich war&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;&#xFC;bertragene Datenmenge&apos;)}&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Diese Daten werden in den Logfile&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die description&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Zweck der Datenverarbeitung description&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Dauer der Speicherung&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Dauer der Speicherung description&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit description&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Besondere Funktionen der Internetseite&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Besondere Funktionen der Internetseite description&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Bewerbungsformular&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Welche personenbezogenen&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Die von Ihnen in die Formularfelder&apos;)}
+				&lt;/li&gt;
+
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r description&apos;)}
+				&lt;/li&gt;
+
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung 2 description&apos;)}
+				&lt;/li&gt;
+
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Dauer der Speicherung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Dauer der Speicherung description 2&apos;)}
+				&lt;/li&gt;
+
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit description 2&apos;)}
+				&lt;/li&gt;
+
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten description&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Bewerbungsformular&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Welche personenbezogenen&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Welche personenbezogenen description 2&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die description 2&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung description 2&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Dauer der Speicherung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Dauer der Speicherung description 3&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Widerrufs- und L&#xF6;schungsm&#xF6;glichkeiten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Widerrufs- und L&#xF6;schungsm&#xF6;glichkeiten description&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Kommentar-Funktion&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten d3&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die description 2&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung d3&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Dauer der Speicherung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Dauer der Speicherung d3&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Widerrufs- und L&#xF6;schungsm&#xF6;glichkeit&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Widerrufs- und L&#xF6;schungsm&#xF6;glichkeit d&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten d3&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Kontaktformular&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten d4&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die description 2&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung d4&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Dauer der Speicherung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Dauer der Speicherung d4&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Widerrufs- und L&#xF6;schungsm&#xF6;glichkeit&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Widerrufs- und L&#xF6;schungsm&#xF6;glichkeit d4&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten d4&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Formular zur Newsletter-Anmeldung&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten d5&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die description 2&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung d5&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Dauer der Speicherung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Dauer der Speicherung d5&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Widerrufs- und L&#xF6;schungsm&#xF6;glichkeit&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Widerrufs- und L&#xF6;schungsm&#xF6;glichkeit d5&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Erforderlichkeit der Angabe personenbezogener Daten d5&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Statistische Auswertung der&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Statistische Auswertung der d&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Google Tag Manager&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten d6&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die d6&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung d6&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Dauer der Speicherung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Dauer der Speicherung d6&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit d6&apos;)}
+					&lt;a
+						href={`http://tools.google.com/dlpage/gaoptout?hl=${i18n.locale}`}
+						className=&apos;termsOfUse__link&apos;
+						target=&apos;_blank&apos;
+						rel=&apos;noopener noreferrer&apos;
+					&gt;
+						http://tools.google.com/dlpage/gaoptout?hl={i18n.locale}
+					&lt;/a&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit d6-2&apos;)}
+					&lt;a href=&apos;https://policies.google.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://policies.google.com/privacy
+					&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Twitter Advertising&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+				{i18n.t(&apos;Twitter Advertising d1&apos;)}
+				&lt;a href=&apos;https://twitter.com/de/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://twitter.com/de/privacy
+				&lt;/a&gt;
+				&lt;br /&gt;
+				&lt;br /&gt;
+				{i18n.t(&apos;Twitter Advertising d2&apos;)}
+				&lt;a href=&apos;https://twitter.com/de/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://twitter.com/de/privacy
+				&lt;/a&gt;
+			&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Google Ads&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+				{i18n.t(&apos;Google Ads d1&apos;)}
+				&lt;a href=&apos;https://policies.google.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://policies.google.com/privacy
+				&lt;/a&gt;
+				&lt;br /&gt;
+				&lt;br /&gt;
+				{i18n.t(&apos;Google Ads d2&apos;)}
+				&lt;a href=&apos;https://policies.google.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://policies.google.com/privacy
+				&lt;/a&gt;
+			&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Google-Analytics&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Umfang der Verarbeitung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Umfang der Verarbeitung d&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die d7&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung d7&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Dauer der Speicherung&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Dauer der Speicherung d7&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeiten&apos;)}
+					&lt;br /&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeiten d7-1&apos;)}
+					&lt;a
+						href={`http://tools.google.com/dlpage/gaoptout?hl=${i18n.locale}`}
+						className=&apos;termsOfUse__link&apos;
+						target=&apos;_blank&apos;
+						rel=&apos;noopener noreferrer&apos;
+					&gt;
+						{`http://tools.google.com/dlpage/gaoptout?hl=${i18n.locale}`}
+					&lt;/a&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeiten d7-2&apos;)}
+					&lt;a
+						href={`https://policies.google.com/privacy?hl=${i18n.locale}`}
+						className=&apos;termsOfUse__link&apos;
+						target=&apos;_blank&apos;
+						rel=&apos;noopener noreferrer&apos;
+					&gt;
+						{`https://policies.google.com/privacy?hl=${i18n.locale}`}
+					&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Hotjar&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+				{i18n.t(&apos;Hotjar d-1&apos;)}
+				&lt;a href=&apos;https://www.hotjar.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://www.hotjar.com/privacy
+				&lt;/a&gt;
+				&lt;br /&gt;
+				&lt;br /&gt;
+				{i18n.t(&apos;Hotjar d-2&apos;)}
+			&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Facebook Connect&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+				{i18n.t(&apos;Facebook Connect d-1&apos;)}
+				&lt;a href=&apos;https://www.facebook.com/about/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://www.facebook.com/about/privacy
+				&lt;/a&gt;
+				&lt;br /&gt;
+				&lt;br /&gt;
+				{i18n.t(&apos;Facebook Connect d-2&apos;)}
+				&lt;a href=&apos;https://www.facebook.com/about/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://www.facebook.com/about/privacy
+				&lt;/a&gt;
+			&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Facebook Custom Audience&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+				{i18n.t(&apos;Facebook Custom Audience d-1&apos;)}
+				&lt;a href=&apos;https://www.facebook.com/about/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://www.facebook.com/about/privacy
+				&lt;/a&gt;
+				&lt;br /&gt;
+				&lt;br /&gt;
+				{i18n.t(&apos;Facebook Custom Audience d-2&apos;)}
+				&lt;a href=&apos;https://www.facebook.com/about/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					https://www.facebook.com/about/privacy
+				&lt;/a&gt;
+			&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Einbindung externer Webservices&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;
+				{i18n.t(&apos;Einbindung externer Webservices d1&apos;)}
+				&lt;br /&gt;
+				&lt;br /&gt;
+				{i18n.t(&apos;Einbindung externer Webservices d2&apos;)}
+			&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Bootstrap CDN&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Bootstrap CDN d-1&apos;)}
+					&lt;a href=&apos;https://www.privacyshield.gov/list&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://www.privacyshield.gov/list
+					&lt;/a&gt;
+					{i18n.t(&apos;Bootstrap CDN d-2&apos;)}
+					&lt;a href=&apos;http://data.europa.eu/eli/dec_impl/2016/1250/oj&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						http://data.europa.eu/eli/dec_impl/2016/1250/oj
+					&lt;/a&gt;
+					{i18n.t(&apos;Bootstrap CDN d-3&apos;)}
+					&lt;a href=&apos;https://www.bootstrapcdn.com/privacy-policy/&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://www.bootstrapcdn.com/privacy-policy/
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;Bootstrap CDN d-4&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Doubleclick&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Doubleclick d1&apos;)}
+					&lt;a href=&apos;https://policies.google.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://policies.google.com/privacy
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;Doubleclick d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Google&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Google d1&apos;)}
+					&lt;a href=&apos;https://policies.google.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://policies.google.com/privacy
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;Google d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Google APIS&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Google APIS d1&apos;)}
+					&lt;a href=&apos;https://policies.google.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://policies.google.com/privacy
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;Google APIS d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Gstatic&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Gstatic d1&apos;)}
+					&lt;a href=&apos;https://policies.google.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://policies.google.com/privacy
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;Gstatic d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;MyFonts Counter&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;MyFonts Counter d1&apos;)}
+					&lt;a href=&apos;http://www.myfonts.com/info/legal/#Privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						http://www.myfonts.com/info/legal/#Privacy
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;MyFonts Counter d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Youtube&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;Youtube d1&apos;)}
+					&lt;a href=&apos;https://policies.google.com/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://policies.google.com/privacy
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;Youtube d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;website-checkde&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;website-checkde d1&apos;)}
+					&lt;a
+						href=&apos;https://www.website-check.de/datenschutzerklaerung/&apos;
+						className=&apos;termsOfUse__link&apos;
+						target=&apos;_blank&apos;
+						rel=&apos;noopener noreferrer&apos;
+					&gt;
+						https://www.website-check.de/datenschutzerklaerung/
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;website-checkde d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;wwwpages03net&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					{i18n.t(&apos;wwwpages03net d1&apos;)}
+					&lt;a href=&apos;http://www.pages03.net/&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						http://www.pages03.net/
+					&lt;/a&gt;
+					&lt;br /&gt;
+					&lt;br /&gt;
+					{i18n.t(&apos;wwwpages03net d2&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__headerOverList&apos;&gt;{i18n.t(&apos;Social Plug&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Welche personenbezogenen Daten&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Welche personenbezogenen Daten d8&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die d8&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung d8&apos;)}
+					&lt;a href=&apos;https://twitter.com/de/privacy&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+						https://twitter.com/de/privacy
+					&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Dauer der Speicherung&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die d8&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Widerspruchs- und L&#xF6;schungsm&#xF6;glichkeit d8&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Unterrichtung &#xFC;ber die Nutzung von Cookies&apos;)}&lt;/h2&gt;
+			&lt;ul className=&apos;termsOfUse__list&apos;&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Umfang der Verarbeitung&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Umfang der Verarbeitung d9&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Rechtsgrundlage f&#xFC;r die d9&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Zweck der Datenverarbeitung&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Zweck der Datenverarbeitung d9&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Dauer der Speicherung&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Dauer der Speicherung d9&apos;)}
+				&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;
+					&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Widerspruchs- und Beseitigungsm&#xF6;glichkeit&apos;)}&lt;/p&gt;
+					{i18n.t(&apos;Widerspruchs- und Beseitigungsm&#xF6;glichkeit d9&apos;)}
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Datensicherheit und Datenschutz&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Datensicherheit und Datenschutz d&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Auskunftsanspruch und Berichtigungsw&#xFC;nsche&apos;)}&lt;/h2&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Auskunftsanspruch&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Auskunftsanspruch d&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Berichtigungsanspruch&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Berichtigungsanspruch d&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Recht auf L&#xF6;schung&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Recht auf L&#xF6;schung d&apos;)}&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;die Daten entweder nicht mehr ben&#xF6;tigt werden&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;aufgrund des Widerrufs Ihrer Einwilligung&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Sie Widerspruch gegen die Verarbeitung&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Sie Widerspruch gegen die Verarbeitung&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Ihre Daten unrechtm&#xE4;&#xDF;ig verarbeitet werden&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;eine rechtliche Verpflichtung dies erfordert oder&apos;)}&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;p className=&apos;termsOfUse__text termsOfUse__marginText&apos;&gt;{i18n.t(&apos;Das Recht besteht gem Art 17 Abs 3 DSGVO dann nicht wenn&apos;)}&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;die Verarbeitung zur Aus&#xFC;bung&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Ihre Daten auf Grundlage einer rechtlichen&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;die Verarbeitung aus Gr&#xFC;nden des&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;die Daten zur Geltendmachung&apos;)}&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Recht auf Einschr&#xE4;nkung der Verarbeitung&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Recht auf Einschr&#xE4;nkung der Verarbeitung d1&apos;)}&lt;/p&gt;
+			&lt;br /&gt; &lt;br /&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Recht auf Einschr&#xE4;nkung der Verarbeitung d2&apos;)}&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;die Richtigkeit der personenbezogenen&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;die Verarbeitung unrechtm&#xE4;&#xDF;ig&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;ein Widerspruch gegen die Verarbeitung&apos;)}&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Recht auf Widerruf&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Recht auf Widerruf d&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Recht auf Widerspruch&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Recht auf Widerspruch d&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Wie nehme ich meine Rechte wahr&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Wie nehme ich meine Rechte wahr d1&apos;)}&lt;/p&gt;
+			&lt;br /&gt;
+			&lt;br /&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Wie nehme ich meine Rechte wahr d2&apos;)}&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Wie nehme ich meine Rechte wahr ul1&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Wie nehme ich meine Rechte wahr ul2&apos;)}&lt;/li&gt;
+				&lt;li className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Wie nehme ich meine Rechte wahr ul3&apos;)}&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;p className=&apos;termsOfUse__text termsOfUse__marginText&apos;&gt;{i18n.t(&apos;Die &#xDC;bertragung der personenbezogenen&apos;)}&lt;/p&gt;
+			&lt;h2 className=&apos;termsOfUse__header2&apos;&gt;{i18n.t(&apos;Beschwerderecht bei der Aufsichtsbeh&#xF6;rde&apos;)}&lt;/h2&gt;
+			&lt;p className=&apos;termsOfUse__text&apos;&gt;{i18n.t(&apos;Sofern Sie den Verdacht haben&apos;)}&lt;/p&gt;
+			&lt;p className=&apos;termsOfUse__text termsOfUse__marginText&apos;&gt;
+				{i18n.t(&apos;Erstellt durch&apos;)}
+				&lt;br /&gt;
+				{i18n.t(&apos;IT-Recht-Kanzlei DURY&apos;)}
+				&lt;a href=&apos;https://dury.de&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					www.dury.de
+				&lt;/a&gt;
+				&lt;br /&gt;
+				{i18n.t(&apos;Website-Check GmbH&apos;)}
+				&lt;a href=&apos;https://website-check.de&apos; className=&apos;termsOfUse__link&apos; target=&apos;_blank&apos; rel=&apos;noopener noreferrer&apos;&gt;
+					www.website-check.de
+				&lt;/a&gt;
+			&lt;/p&gt;
+		&lt;/article&gt;
+	);
+};
+
+export default TermsOfUse;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

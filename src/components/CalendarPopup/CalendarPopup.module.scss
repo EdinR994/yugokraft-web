@@ -1,0 +1,107 @@
+.popup {
+	position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+	z-index: 100;
+	padding: 25px;
+
+	&__hidden {
+		display: none;
+	}
+
+	&__container {
+		font-family: 'Inter', sans-serif;
+		font-size: 17px;
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		padding: 40px;
+		width: 700px;
+
+		box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12);
+		border-radius: 16px;
+		animation: popup 0.2s;
+	}
+
+	&__heading {
+		font-family: Inter;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 33px;
+		color: #000;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-family: Inter;
+		font-size: 17px;
+		line-height: 24px;
+		color: #000;
+		margin-bottom: 30px;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__button_ok {
+		height: 56px;
+		line-height: 56px;
+		overflow: hidden;
+		flex-grow: 2;
+		background-color: #F27480;
+		border-radius: 6px;
+		outline: none;
+		border: none;
+
+		font-family: Inter;
+		font-weight: bold;
+		font-size: 16px;
+		color: #FFFFFF;
+	}
+
+	&__button_cancel {
+		flex-grow: 1;
+		height: 56px;
+		min-width: 170px;
+		margin-right: 153px;
+		background-color: #B9BDC1;
+		border-radius: 6px;
+		outline: none;
+		border: none;
+
+		font-family: Inter;
+		font-weight: bold;
+		font-size: 16px;
+		color: #FFFFFF;
+	}
+
+	@media screen and (max-width: 925px) {
+		&__button_ok {
+			flex-grow: initial;
+		}
+
+		&__button_cancel {
+			flex-grow: initial;
+		}
+	}
+
+	@media screen and (max-width: 760px) {
+		&__button_ok {
+			width: 100%;
+			order: 1;
+		}
+		&__button_cancel {
+			margin: 20px 0;
+			width: 100%;
+			order: 2;
+		}
+	}
+}

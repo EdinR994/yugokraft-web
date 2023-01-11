@@ -1,0 +1,13 @@
+.arrow-up,
+.arrow-down {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%) rotate(0);
+	cursor: pointer;
+}
+
+.arrow-up {
+	transform: translateY(-50%) rotate(180deg);
+}
+

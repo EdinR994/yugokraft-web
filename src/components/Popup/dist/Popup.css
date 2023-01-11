@@ -1,0 +1,58 @@
+.popup {
+  z-index: 30;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.popup__message {
+  padding: 50px 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: 200px;
+  left: calc(50vw - 200px);
+  font-family: "Montserrat";
+  font-size: 14.1px;
+  line-height: 16px;
+  color: #1E496B;
+  font-weight: 600;
+}
+@media (max-width: 450px) {
+  .popup__message {
+    width: 90vw;
+    left: 5vw;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.popup__message div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.popup__button {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 0;
+  width: 100%;
+  margin-bottom: 15px;
+  left: 0;
+  min-width: 100px;
+}

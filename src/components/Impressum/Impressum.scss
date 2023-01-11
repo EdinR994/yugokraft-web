@@ -1,0 +1,62 @@
+@import '../../cssVars.scss';
+
+.impressum {
+  box-shadow: 0px 4px 30px rgba(53, 85, 117, 0.2);
+  width: calc(100% - 400px);
+  margin: 100px auto;
+  box-sizing: border-box;
+  padding: 40px 112px;
+  margin-top: 0;
+  position: relative;
+  top: 80px;
+  max-width: 1600px;
+
+  @media (max-width: 1000px) {
+    width: calc(100% - 20px);
+    padding: 40px 10px;
+  }
+
+  &__header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3E6488;
+    margin-bottom: 44px;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  &__header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 47px;
+    height: 6px;
+    background-color: $color12;
+  }
+
+  &__header2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color2;
+    margin-top: 35px;
+    margin-bottom: 14px;
+    max-width: 574px;
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.1px;
+    line-height: 170.4%;
+    letter-spacing: 0.02em;
+    color: #607060;
+  }
+}

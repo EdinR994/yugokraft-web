@@ -1,0 +1,470 @@
+.forCandidates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.forCandidates__textOnLine {
+  margin-top: 59px !important;
+}
+.forCandidates__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1073px;
+  padding-left: 64px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.forCandidates__header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #DAE1E8;
+  margin-bottom: 42px;
+}
+.forCandidates__topCardsWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 140px;
+  margin-top: 34px;
+}
+.forCandidates__card {
+  width: 465px;
+  padding-left: 46px;
+  position: relative;
+}
+.forCandidates__logo1::before, .forCandidates__logo2::before, .forCandidates__logo3::before, .forCandidates__logo4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.forCandidates__logo1::before {
+  background-image: url(./images/ico1.svg);
+}
+.forCandidates__logo2::before {
+  background-image: url(./images/ico3.svg);
+}
+.forCandidates__logo3::before {
+  background-image: url(./images/ico4.svg);
+}
+.forCandidates__logo4::before {
+  background-image: url(./images/ico2.svg);
+}
+.forCandidates__cardHeader {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E496B;
+  margin-bottom: 11px;
+}
+.forCandidates__text {
+  position: absolute;
+  font-family: "Montserrat";
+  font-size: 14.1px;
+  line-height: 142.69%;
+  color: #7E93A8;
+  font-weight: 600;
+  width: 418px;
+}
+.forCandidates__textApplication {
+  width: 397px;
+}
+.forCandidates__middle {
+  max-width: 1165px;
+  margin-top: -67px;
+  margin-bottom: 73px;
+}
+.forCandidates__middleCard {
+  width: 857px;
+  margin-bottom: -58px;
+  padding-right: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 351px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.forCandidates__cardNumber {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 288px;
+  line-height: 351px;
+  text-transform: uppercase;
+  color: rgba(218, 225, 232, 0.45);
+  width: 254px;
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+@media (max-width: 600px) {
+  .forCandidates__cardNumber {
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0;
+  }
+}
+.forCandidates__cardNumberDescription {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1E496B;
+  position: absolute;
+  right: 79px;
+  top: 115px;
+  white-space: nowrap;
+}
+.forCandidates__middleCardText {
+  width: 671px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.1px;
+  line-height: 142.69%;
+  color: #7E93A8;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: start;
+}
+.forCandidates__cardTextInsteadNumber {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 82px;
+  text-transform: uppercase;
+  color: rgba(218, 225, 232, 0.45);
+  width: 462px;
+  letter-spacing: -0.01em;
+  margin-top: 55px;
+}
+.forCandidates__middleLastCardTextWrapper {
+  max-width: 531px;
+  position: relative;
+  min-height: 137px;
+  margin-top: 68px;
+  margin-right: 104px;
+}
+.forCandidates__bottom {
+  width: 100%;
+  background: -webkit-linear-gradient(top, #153757 0%, #224261 100%);
+  background: linear-gradient(180deg, #153757 0%, #224261 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.forCandidates__bottomContetnWrapper {
+  width: 100%;
+  max-width: 935px;
+  margin-top: 40px;
+}
+.forCandidates__bottomHeader {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 78px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  margin-top: -40px;
+  margin-bottom: 32px;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .forCandidates__bottomHeader {
+    left: -11px;
+  }
+}
+.forCandidates__logo {
+  position: relative;
+  left: -20px;
+}
+.forCandidates__bottomCardsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 37px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+}
+.forCandidates__bottomCard {
+  background-color: #1E496B;
+  width: 291px;
+  height: 70%;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 67px;
+}
+.forCandidates__bottomCardShadow {
+  position: relative;
+  bottom: 15px;
+  right: 10px;
+  width: 291px;
+  min-height: 78.1px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  padding-bottom: 7px;
+  height: max-content;
+  padding-top: 1px;
+}
+.forCandidates__bottomCardImage {
+  position: absolute;
+  top: -43px;
+  left: 0px;
+  z-index: 3;
+}
+.forCandidates__bottomCardDescriptionWrapper {
+  margin-left: 118px;
+}
+.forCandidates__bottomCardHeader {
+  margin-bottom: 11px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 142.69%;
+  color: #1E496B;
+  z-index: 4;
+  margin-top: 15px;
+  line-height: 100%;
+}
+.forCandidates__salary {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 142.69%;
+  text-transform: uppercase;
+  color: #F27480;
+}
+.forCandidates__salaryCost {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #F27480;
+  margin-right: 5px;
+}
+.forCandidates__forJob {
+  margin-top: 147px !important;
+  margin-bottom: 81px !important;
+}
+.forCandidates__forJobText {
+  padding-left: 30px !important;
+  padding-right: 29px !important;
+}
+.forCandidates__HowItWillBe {
+  margin-bottom: 10px;
+}
+.forCandidates__middleCard3 {
+  margin-top: 16px;
+}
+.forCandidates__textjobDream {
+  bottom: 23px;
+  line-height: 157%;
+}
+
+@media (max-width: 1200px) {
+  .forCandidates__middleCard {
+    width: 100%;
+    padding: 0 112px;
+    box-sizing: border-box;
+  }
+  .forCandidates__top {
+    box-sizing: border-box;
+    padding-right: 64px;
+  }
+  .forCandidates__middle {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .forCandidates__bottomContetnWrapper {
+    box-sizing: border-box;
+  }
+  .forCandidates__text {
+    width: 100%;
+    position: initial;
+    font-size: 12px;
+  }
+  .forCandidates__cardNumber {
+    margin-right: 30px;
+  }
+  .forCandidates__cardTextInsteadNumber {
+    width: auto;
+    opacity: 0.45;
+  }
+  .forCandidates__middleLastCardTextWrapper {
+    position: absolute;
+    margin-left: 231px;
+    margin-right: 31px;
+    margin-left: 138px;
+    margin-right: 31px;
+    margin-right: 112px;
+  }
+  .forCandidates__textjobDream {
+    color: #828282;
+  }
+  .forCandidates__cardNumber {
+    font-size: 144px;
+    line-height: 176px;
+  }
+  .forCandidates__cardNumberDescription {
+    top: 72px;
+  }
+  .forCandidates__middleCardText {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .forCandidates__bottomHeader {
+    font-size: 36px;
+    text-align: center;
+    right: 0;
+    line-height: 100%;
+  }
+  .forCandidates__middleCard {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+  .forCandidates__bottomCardsWrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .forCandidates__bottomCard {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+  .forCandidates__cardHeader {
+    font-size: 15px;
+  }
+  .forCandidates__header {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+  }
+  .forCandidates__forJob, .forCandidates .textOnLineLightMargin {
+    position: relative;
+    margin-bottom: 25px !important;
+  }
+}
+@media (max-width: 600px) {
+  .forCandidates__middleCard {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .forCandidates__cardNumberDescription {
+    right: -11px;
+    font-size: 17px;
+  }
+  .forCandidates__middleLastCardTextWrapper {
+    margin-right: 30px;
+  }
+  .forCandidates__topCardsWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+  }
+  .forCandidates__card {
+    width: auto;
+    margin-bottom: 21px;
+  }
+  .forCandidates__header {
+    font-size: 24px;
+    margin-top: -74px;
+    line-height: 100%;
+    text-align: center;
+  }
+  .forCandidates__textOnLine {
+    margin-bottom: 51 !important;
+  }
+  .forCandidates__top {
+    padding-right: 49px;
+    padding-left: 49px;
+  }
+  .forCandidates__middleCard {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .forCandidates__cardTextInsteadNumber {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .forCandidates__forJob {
+    top: -149px;
+  }
+  .forCandidates .textOnLine span {
+    font-size: 14.1px;
+  }
+  .forCandidates__HowItWillBeLine {
+    top: -80px;
+    margin-bottom: 51px !important;
+  }
+}
