@@ -24,7 +24,7 @@ http {
 
     server {
     	listen 80;
-    	server_name  yugokraft.de;
+    	server_name  ${APP_URL};
 
 	add_header Strict-Transport-Security "max-age=15768000; includeSubDomains" always;
 
