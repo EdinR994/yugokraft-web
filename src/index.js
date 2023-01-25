@@ -12,9 +12,10 @@ const de = require('./locale/de.json');
 const sh = require('./locale/sh.json');
 const ua = require('./locale/ua.json');
 const ru = require('./locale/ru.json');
+const tr = require('./locale/tr.json');
 
 i18n.fallbacks = true;
-i18n.translations = { en, de, sh, ua, ru };
+i18n.translations = { en, de, sh, ua, ru, tr };
 
 ReactDOM.render(
 	<Provider store={store}>

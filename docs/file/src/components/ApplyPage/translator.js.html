@@ -90,6 +90,7 @@ import sh from &apos;../../locale/sh.json&apos;;
 import en from &apos;../../locale/en.json&apos;;
 import ua from &apos;../../locale/ua.json&apos;;
 import ru from &apos;../../locale/ru.json&apos;;
+import tr from &apos;../../locale/tr.json&apos;;
 
 const translator = (word, cb) =&gt; {
 	const translatedWord = i18n.t(word);
@@ -123,6 +124,13 @@ const translator = (word, cb) =&gt; {
 
 		for (const i in en) {
 			if (en[i] === translatedWord) {
+				cb(de[i]);
+				return translatedWord;
+			}
+		}
+
+		for (const i in tr) {
+			if (tr[i] === translatedWord) {
 				cb(de[i]);
 				return translatedWord;
 			}
@@ -161,6 +169,13 @@ const translator = (word, cb) =&gt; {
 				return translatedWord;
 			}
 		}
+
+		for (const i in tr) {
+			if (tr[i] === translatedWord) {
+				cb(ua[i]);
+				return translatedWord;
+			}
+		}
 	} else if (i18n.locale === &apos;sh&apos;) {
 		for (const i in sh) {
 			if (sh[i] === translatedWord) {
@@ -191,6 +206,13 @@ const translator = (word, cb) =&gt; {
 
 		for (const i in en) {
 			if (en[i] === translatedWord) {
+				cb(sh[i]);
+				return translatedWord;
+			}
+		}
+
+		for (const i in tr) {
+			if (tr[i] === translatedWord) {
 				cb(sh[i]);
 				return translatedWord;
 			}
@@ -229,6 +251,13 @@ const translator = (word, cb) =&gt; {
 				return translatedWord;
 			}
 		}
+
+		for (const i in tr) {
+			if (tr[i] === translatedWord) {
+				cb(ru[i]);
+				return translatedWord;
+			}
+		}
 	} else if (i18n.locale === &apos;en&apos;) {
 		for (const i in en) {
 			if (en[i] === translatedWord) {
@@ -260,6 +289,54 @@ const translator = (word, cb) =&gt; {
 		for (const i in sh) {
 			if (sh[i] === translatedWord) {
 				cb(en[i]);
+				return translatedWord;
+			}
+		}
+
+		for (const i in tr) {
+			if (tr[i] === translatedWord) {
+				cb(en[i]);
+				return translatedWord;
+			}
+		}
+	} else if (i18n.locale === &apos;en&apos;) {
+		for (const i in tr) {
+			if (tr[i] === translatedWord) {
+				return translatedWord;
+			}
+		}
+
+		for (const i in de) {
+			if (de[i] === translatedWord) {
+				cb(tr[i]);
+				return translatedWord;
+			}
+		}
+
+		for (const i in ua) {
+			if (ua[i] === translatedWord) {
+				cb(tr[i]);
+				return translatedWord;
+			}
+		}
+
+		for (const i in ru) {
+			if (ru[i] === translatedWord) {
+				cb(tr[i]);
+				return translatedWord;
+			}
+		}
+
+		for (const i in sh) {
+			if (sh[i] === translatedWord) {
+				cb(tr[i]);
+				return translatedWord;
+			}
+		}
+
+		for (const i in tr) {
+			if (tr[i] === translatedWord) {
+				cb(tr[i]);
 				return translatedWord;
 			}
 		}
