@@ -13,7 +13,7 @@ const sh = require('./locale/sh.json');
 const ua = require('./locale/ua.json');
 const ru = require('./locale/ru.json');
 const tr = require('./locale/tr.json');
-const tr = require('./locale/es.json');
+const es = require('./locale/es.json');
 const ro = require('./locale/ro.json');
 const bg = require('./locale/bg.json');
 
