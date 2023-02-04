@@ -15,9 +15,10 @@ const ru = require('./locale/ru.json');
 const tr = require('./locale/tr.json');
 const tr = require('./locale/es.json');
 const ro = require('./locale/ro.json');
+const bg = require('./locale/bg.json');
 
 i18n.fallbacks = true;
-i18n.translations = { en, de, sh, ua, ru, tr, es, ro };
+i18n.translations = { en, de, sh, ua, ru, tr, es, ro, bg };
 
 ReactDOM.render(
 	<Provider store={store}>
